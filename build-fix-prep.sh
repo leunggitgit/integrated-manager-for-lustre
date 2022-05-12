@@ -45,6 +45,8 @@ yum -y install yum-utils
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
+systemctl start docker
+
 # Unclear if we really need this...
 yum install -y python python-pip python-devel python2-pbr postgresql96 openssl gcc-c++
 
