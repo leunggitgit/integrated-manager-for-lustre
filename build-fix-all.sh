@@ -8,7 +8,6 @@ make rpms > make-rpms.out 2>&1 \
 && make copr-rpms > make-copr-rpms.out 2>&1 \
 && make device-scanner-rpms > make-device-scanner-rpms.out 2>&1 \
 && make iml-gui-rpm > make-iml-gui-rpm.out 2>&1 \
-&& systemctl start docker \
 && make docker-rpms > make-docker-rpms.out 2>&1 \
 && find _topdir
 

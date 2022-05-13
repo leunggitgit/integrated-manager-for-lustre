@@ -1,0 +1,1277 @@
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.fcix.net
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Package yum-plugin-copr-1.1.31-54.el7_8.noarch already installed and latest version
+Nothing to do
+Loaded plugins: copr, fastestmirror
+copr done
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: sjc.edge.kernel.org
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Package git-1.8.3.1-23.el7_8.x86_64 already installed and latest version
+Package epel-release-7-14.noarch already installed and latest version
+Package python-setuptools-0.9.8-7.el7.noarch already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package ed.x86_64 0:1.9-4.el7 will be installed
+---> Package rpmdevtools.noarch 0:8.3-8.el7_9 will be installed
+--> Processing Dependency: rpm-build >= 4.4.2.3 for package: rpmdevtools-8.3-8.el7_9.noarch
+--> Processing Dependency: emacs-filesystem for package: rpmdevtools-8.3-8.el7_9.noarch
+--> Running transaction check
+---> Package emacs-filesystem.noarch 1:24.3-23.el7 will be installed
+---> Package rpm-build.x86_64 0:4.11.3-48.el7_9 will be installed
+--> Processing Dependency: patch >= 2.5 for package: rpm-build-4.11.3-48.el7_9.x86_64
+--> Processing Dependency: elfutils >= 0.128 for package: rpm-build-4.11.3-48.el7_9.x86_64
+--> Processing Dependency: unzip for package: rpm-build-4.11.3-48.el7_9.x86_64
+--> Processing Dependency: system-rpm-config for package: rpm-build-4.11.3-48.el7_9.x86_64
+--> Processing Dependency: perl(Thread::Queue) for package: rpm-build-4.11.3-48.el7_9.x86_64
+--> Processing Dependency: /usr/bin/gdb-add-index for package: rpm-build-4.11.3-48.el7_9.x86_64
+--> Running transaction check
+---> Package elfutils.x86_64 0:0.176-5.el7 will be installed
+---> Package gdb.x86_64 0:7.6.1-120.el7 will be installed
+---> Package patch.x86_64 0:2.7.1-12.el7_7 will be installed
+---> Package perl-Thread-Queue.noarch 0:3.02-2.el7 will be installed
+---> Package redhat-rpm-config.noarch 0:9.1.0-88.el7.centos will be installed
+--> Processing Dependency: dwz >= 0.4 for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+--> Processing Dependency: zip for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+--> Processing Dependency: python-srpm-macros for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+--> Processing Dependency: perl-srpm-macros for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+---> Package unzip.x86_64 0:6.0-24.el7_9 will be installed
+--> Running transaction check
+---> Package dwz.x86_64 0:0.11-3.el7 will be installed
+---> Package perl-srpm-macros.noarch 0:1-8.el7 will be installed
+---> Package python-srpm-macros.noarch 0:3-34.el7 will be installed
+---> Package zip.x86_64 0:3.0-11.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch       Version                    Repository   Size
+================================================================================
+Installing:
+ ed                     x86_64     1.9-4.el7                  base         72 k
+ rpmdevtools            noarch     8.3-8.el7_9                updates      97 k
+Installing for dependencies:
+ dwz                    x86_64     0.11-3.el7                 base         99 k
+ elfutils               x86_64     0.176-5.el7                base        308 k
+ emacs-filesystem       noarch     1:24.3-23.el7              base         58 k
+ gdb                    x86_64     7.6.1-120.el7              base        2.4 M
+ patch                  x86_64     2.7.1-12.el7_7             base        111 k
+ perl-Thread-Queue      noarch     3.02-2.el7                 base         17 k
+ perl-srpm-macros       noarch     1-8.el7                    base        4.6 k
+ python-srpm-macros     noarch     3-34.el7                   base        8.8 k
+ redhat-rpm-config      noarch     9.1.0-88.el7.centos        base         81 k
+ rpm-build              x86_64     4.11.3-48.el7_9            updates     150 k
+ unzip                  x86_64     6.0-24.el7_9               updates     172 k
+ zip                    x86_64     3.0-11.el7                 base        260 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+12 Dependent packages)
+
+Total download size: 3.8 M
+Installed size: 10 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.6 MB/s | 3.8 MB  00:02     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : perl-srpm-macros-1-8.el7.noarch                             1/14 
+  Installing : dwz-0.11-3.el7.x86_64                                       2/14 
+  Installing : python-srpm-macros-3-34.el7.noarch                          3/14 
+  Installing : unzip-6.0-24.el7_9.x86_64                                   4/14 
+  Installing : gdb-7.6.1-120.el7.x86_64                                    5/14 
+  Installing : zip-3.0-11.el7.x86_64                                       6/14 
+  Installing : redhat-rpm-config-9.1.0-88.el7.centos.noarch                7/14 
+  Installing : perl-Thread-Queue-3.02-2.el7.noarch                         8/14 
+  Installing : 1:emacs-filesystem-24.3-23.el7.noarch                       9/14 
+  Installing : elfutils-0.176-5.el7.x86_64                                10/14 
+  Installing : patch-2.7.1-12.el7_7.x86_64                                11/14 
+  Installing : rpm-build-4.11.3-48.el7_9.x86_64                           12/14 
+  Installing : rpmdevtools-8.3-8.el7_9.noarch                             13/14 
+  Installing : ed-1.9-4.el7.x86_64                                        14/14 
+  Verifying  : patch-2.7.1-12.el7_7.x86_64                                 1/14 
+  Verifying  : elfutils-0.176-5.el7.x86_64                                 2/14 
+  Verifying  : rpm-build-4.11.3-48.el7_9.x86_64                            3/14 
+  Verifying  : 1:emacs-filesystem-24.3-23.el7.noarch                       4/14 
+  Verifying  : perl-Thread-Queue-3.02-2.el7.noarch                         5/14 
+  Verifying  : zip-3.0-11.el7.x86_64                                       6/14 
+  Verifying  : rpmdevtools-8.3-8.el7_9.noarch                              7/14 
+  Verifying  : gdb-7.6.1-120.el7.x86_64                                    8/14 
+  Verifying  : unzip-6.0-24.el7_9.x86_64                                   9/14 
+  Verifying  : ed-1.9-4.el7.x86_64                                        10/14 
+  Verifying  : python-srpm-macros-3-34.el7.noarch                         11/14 
+  Verifying  : dwz-0.11-3.el7.x86_64                                      12/14 
+  Verifying  : perl-srpm-macros-1-8.el7.noarch                            13/14 
+  Verifying  : redhat-rpm-config-9.1.0-88.el7.centos.noarch               14/14 
+
+Installed:
+  ed.x86_64 0:1.9-4.el7             rpmdevtools.noarch 0:8.3-8.el7_9            
+
+Dependency Installed:
+  dwz.x86_64 0:0.11-3.el7                                                       
+  elfutils.x86_64 0:0.176-5.el7                                                 
+  emacs-filesystem.noarch 1:24.3-23.el7                                         
+  gdb.x86_64 0:7.6.1-120.el7                                                    
+  patch.x86_64 0:2.7.1-12.el7_7                                                 
+  perl-Thread-Queue.noarch 0:3.02-2.el7                                         
+  perl-srpm-macros.noarch 0:1-8.el7                                             
+  python-srpm-macros.noarch 0:3-34.el7                                          
+  redhat-rpm-config.noarch 0:9.1.0-88.el7.centos                                
+  rpm-build.x86_64 0:4.11.3-48.el7_9                                            
+  unzip.x86_64 0:6.0-24.el7_9                                                   
+  zip.x86_64 0:3.0-11.el7                                                       
+
+Complete!
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.fcix.net
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Resolving Dependencies
+--> Running transaction check
+---> Package npm.x86_64 1:8.5.0-1.16.14.1.1.el7 will be installed
+--> Processing Dependency: nodejs = 1:16.14.1-1.el7 for package: 1:npm-8.5.0-1.16.14.1.1.el7.x86_64
+--> Running transaction check
+---> Package nodejs.x86_64 1:16.14.1-1.el7 will be installed
+--> Processing Dependency: nodejs-libs(x86-64) = 1:16.14.1-1.el7 for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libuv >= 1:1.43.0 for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: openssl11 >= 1:1.1.1 for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libbrotlidec.so.1()(64bit) for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libbrotlienc.so.1()(64bit) for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libcrypto.so.1.1()(64bit) for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libnode.so.93()(64bit) for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libssl.so.1.1()(64bit) for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Processing Dependency: libuv.so.1()(64bit) for package: 1:nodejs-16.14.1-1.el7.x86_64
+--> Running transaction check
+---> Package brotli.x86_64 0:1.0.7-5.el7 will be installed
+---> Package libuv.x86_64 1:1.44.1-1.el7 will be installed
+---> Package nodejs-libs.x86_64 1:16.14.1-1.el7 will be installed
+---> Package openssl11.x86_64 1:1.1.1k-3.el7 will be installed
+---> Package openssl11-libs.x86_64 1:1.1.1k-3.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch        Version                        Repository
+                                                                           Size
+================================================================================
+Installing:
+ npm                 x86_64      1:8.5.0-1.16.14.1.1.el7        epel      2.1 M
+Installing for dependencies:
+ brotli              x86_64      1.0.7-5.el7                    epel      318 k
+ libuv               x86_64      1:1.44.1-1.el7                 epel      144 k
+ nodejs              x86_64      1:16.14.1-1.el7                epel       98 k
+ nodejs-libs         x86_64      1:16.14.1-1.el7                epel       14 M
+ openssl11           x86_64      1:1.1.1k-3.el7                 epel      692 k
+ openssl11-libs      x86_64      1:1.1.1k-3.el7                 epel      1.5 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+6 Dependent packages)
+
+Total download size: 19 M
+Installed size: 68 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              3.0 MB/s |  19 MB  00:06     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:openssl11-libs-1.1.1k-3.el7.x86_64                         1/7 
+  Installing : 1:libuv-1.44.1-1.el7.x86_64                                  2/7 
+  Installing : brotli-1.0.7-5.el7.x86_64                                    3/7 
+  Installing : 1:nodejs-libs-16.14.1-1.el7.x86_64                           4/7 
+  Installing : 1:openssl11-1.1.1k-3.el7.x86_64                              5/7 
+  Installing : 1:nodejs-16.14.1-1.el7.x86_64                                6/7 
+  Installing : 1:npm-8.5.0-1.16.14.1.1.el7.x86_64                           7/7 
+  Verifying  : 1:npm-8.5.0-1.16.14.1.1.el7.x86_64                           1/7 
+  Verifying  : brotli-1.0.7-5.el7.x86_64                                    2/7 
+  Verifying  : 1:nodejs-16.14.1-1.el7.x86_64                                3/7 
+  Verifying  : 1:openssl11-1.1.1k-3.el7.x86_64                              4/7 
+  Verifying  : 1:libuv-1.44.1-1.el7.x86_64                                  5/7 
+  Verifying  : 1:openssl11-libs-1.1.1k-3.el7.x86_64                         6/7 
+  Verifying  : 1:nodejs-libs-16.14.1-1.el7.x86_64                           7/7 
+
+Installed:
+  npm.x86_64 1:8.5.0-1.16.14.1.1.el7                                            
+
+Dependency Installed:
+  brotli.x86_64 0:1.0.7-5.el7          libuv.x86_64 1:1.44.1-1.el7              
+  nodejs.x86_64 1:16.14.1-1.el7        nodejs-libs.x86_64 1:16.14.1-1.el7       
+  openssl11.x86_64 1:1.1.1k-3.el7      openssl11-libs.x86_64 1:1.1.1k-3.el7     
+
+Complete!
+[yarn]
+name=Yarn Repository
+baseurl=https://dl.yarnpkg.com/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.yarnpkg.com/rpm/pubkey.gpg
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.fcix.net
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Resolving Dependencies
+--> Running transaction check
+---> Package yarn.noarch 0:1.22.18-1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch              Version                Repository       Size
+================================================================================
+Installing:
+ yarn            noarch            1.22.18-1              yarn            1.2 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 1.2 M
+Installed size: 5.1 M
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/yarn/packages/yarn-1.22.18-1.noarch.rpm: Header V4 RSA/SHA512 Signature, key ID 6963f07f: NOKEY
+Public key for yarn-1.22.18-1.noarch.rpm is not installed
+Retrieving key from https://dl.yarnpkg.com/rpm/pubkey.gpg
+Importing GPG key 0x6963F07F:
+ Userid     : "Yarn RPM Packaging <yarn@dan.cx>"
+ Fingerprint: 9a6f 73f3 4beb 7473 4d8c 6914 9cbb b558 6963 f07f
+ From       : https://dl.yarnpkg.com/rpm/pubkey.gpg
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : yarn-1.22.18-1.noarch                                        1/1 
+  Verifying  : yarn-1.22.18-1.noarch                                        1/1 
+
+Installed:
+  yarn.noarch 0:1.22.18-1                                                       
+
+Complete!
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.xtom.com
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Package 1:openssl-1.0.2k-25.el7_9.x86_64 already installed and latest version
+Package epel-release-7-14.noarch already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc.x86_64 0:4.8.5-44.el7 will be installed
+--> Processing Dependency: cpp = 4.8.5-44.el7 for package: gcc-4.8.5-44.el7.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-44.el7.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-44.el7.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-44.el7.x86_64
+---> Package openssl-devel.x86_64 1:1.0.2k-25.el7_9 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.2k-25.el7_9.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.2k-25.el7_9.x86_64
+--> Running transaction check
+---> Package cpp.x86_64 0:4.8.5-44.el7 will be installed
+---> Package glibc-devel.x86_64 0:2.17-325.el7_9 will be installed
+--> Processing Dependency: glibc-headers = 2.17-325.el7_9 for package: glibc-devel-2.17-325.el7_9.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-325.el7_9.x86_64
+---> Package krb5-devel.x86_64 0:1.15.1-51.el7_9 will be installed
+--> Processing Dependency: libkadm5(x86-64) = 1.15.1-51.el7_9 for package: krb5-devel-1.15.1-51.el7_9.x86_64
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.15.1-51.el7_9.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.15.1-51.el7_9.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.15.1-51.el7_9.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.15.1-51.el7_9.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+---> Package zlib-devel.x86_64 0:1.2.7-19.el7_9 will be installed
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.17-325.el7_9 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-325.el7_9.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-325.el7_9.x86_64
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-19.el7 will be installed
+---> Package libkadm5.x86_64 0:1.15.1-51.el7_9 will be installed
+---> Package libselinux-devel.x86_64 0:2.5-15.el7 will be installed
+--> Processing Dependency: libsepol-devel(x86-64) >= 2.5-10 for package: libselinux-devel-2.5-15.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.5-15.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.5-15.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-1160.62.1.el7 will be installed
+---> Package libsepol-devel.x86_64 0:2.5-10.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-17.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ gcc                     x86_64     4.8.5-44.el7              base         16 M
+ openssl-devel           x86_64     1:1.0.2k-25.el7_9         updates     1.5 M
+Installing for dependencies:
+ cpp                     x86_64     4.8.5-44.el7              base        5.9 M
+ glibc-devel             x86_64     2.17-325.el7_9            updates     1.1 M
+ glibc-headers           x86_64     2.17-325.el7_9            updates     691 k
+ kernel-headers          x86_64     3.10.0-1160.62.1.el7      updates     9.1 M
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.15.1-51.el7_9           updates     273 k
+ libcom_err-devel        x86_64     1.42.9-19.el7             base         32 k
+ libkadm5                x86_64     1.15.1-51.el7_9           updates     179 k
+ libmpc                  x86_64     1.0.1-3.el7               base         51 k
+ libselinux-devel        x86_64     2.5-15.el7                base        187 k
+ libsepol-devel          x86_64     2.5-10.el7                base         77 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ mpfr                    x86_64     3.1.1-4.el7               base        203 k
+ pcre-devel              x86_64     8.32-17.el7               base        480 k
+ zlib-devel              x86_64     1.2.7-19.el7_9            updates      50 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+15 Dependent packages)
+
+Total download size: 36 M
+Installed size: 66 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              2.3 MB/s |  36 MB  00:15     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mpfr-3.1.1-4.el7.x86_64                                     1/17 
+  Installing : libmpc-1.0.1-3.el7.x86_64                                   2/17 
+  Installing : cpp-4.8.5-44.el7.x86_64                                     3/17 
+  Installing : libsepol-devel-2.5-10.el7.x86_64                            4/17 
+  Installing : libcom_err-devel-1.42.9-19.el7.x86_64                       5/17 
+  Installing : zlib-devel-1.2.7-19.el7_9.x86_64                            6/17 
+  Installing : pcre-devel-8.32-17.el7.x86_64                               7/17 
+  Installing : libselinux-devel-2.5-15.el7.x86_64                          8/17 
+  Installing : kernel-headers-3.10.0-1160.62.1.el7.x86_64                  9/17 
+  Installing : glibc-headers-2.17-325.el7_9.x86_64                        10/17 
+  Installing : glibc-devel-2.17-325.el7_9.x86_64                          11/17 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                          12/17 
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                     13/17 
+  Installing : libkadm5-1.15.1-51.el7_9.x86_64                            14/17 
+  Installing : krb5-devel-1.15.1-51.el7_9.x86_64                          15/17 
+  Installing : 1:openssl-devel-1.0.2k-25.el7_9.x86_64                     16/17 
+  Installing : gcc-4.8.5-44.el7.x86_64                                    17/17 
+  Verifying  : libselinux-devel-2.5-15.el7.x86_64                          1/17 
+  Verifying  : libkadm5-1.15.1-51.el7_9.x86_64                             2/17 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                      3/17 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                           4/17 
+  Verifying  : 1:openssl-devel-1.0.2k-25.el7_9.x86_64                      5/17 
+  Verifying  : kernel-headers-3.10.0-1160.62.1.el7.x86_64                  6/17 
+  Verifying  : glibc-devel-2.17-325.el7_9.x86_64                           7/17 
+  Verifying  : pcre-devel-8.32-17.el7.x86_64                               8/17 
+  Verifying  : mpfr-3.1.1-4.el7.x86_64                                     9/17 
+  Verifying  : cpp-4.8.5-44.el7.x86_64                                    10/17 
+  Verifying  : krb5-devel-1.15.1-51.el7_9.x86_64                          11/17 
+  Verifying  : gcc-4.8.5-44.el7.x86_64                                    12/17 
+  Verifying  : zlib-devel-1.2.7-19.el7_9.x86_64                           13/17 
+  Verifying  : glibc-headers-2.17-325.el7_9.x86_64                        14/17 
+  Verifying  : libmpc-1.0.1-3.el7.x86_64                                  15/17 
+  Verifying  : libcom_err-devel-1.42.9-19.el7.x86_64                      16/17 
+  Verifying  : libsepol-devel-2.5-10.el7.x86_64                           17/17 
+
+Installed:
+  gcc.x86_64 0:4.8.5-44.el7        openssl-devel.x86_64 1:1.0.2k-25.el7_9       
+
+Dependency Installed:
+  cpp.x86_64 0:4.8.5-44.el7                                                     
+  glibc-devel.x86_64 0:2.17-325.el7_9                                           
+  glibc-headers.x86_64 0:2.17-325.el7_9                                         
+  kernel-headers.x86_64 0:3.10.0-1160.62.1.el7                                  
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.15.1-51.el7_9                                           
+  libcom_err-devel.x86_64 0:1.42.9-19.el7                                       
+  libkadm5.x86_64 0:1.15.1-51.el7_9                                             
+  libmpc.x86_64 0:1.0.1-3.el7                                                   
+  libselinux-devel.x86_64 0:2.5-15.el7                                          
+  libsepol-devel.x86_64 0:2.5-10.el7                                            
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  mpfr.x86_64 0:3.1.1-4.el7                                                     
+  pcre-devel.x86_64 0:8.32-17.el7                                               
+  zlib-devel.x86_64 0:1.2.7-19.el7_9                                            
+
+Complete!
+info: downloading installer
+Warning: Not enforcing strong cipher suites for TLS, this is potentially less secure
+info: profile set to 'default'
+info: default host triple is x86_64-unknown-linux-gnu
+info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+info: latest update on 2022-04-07, rust version 1.60.0 (7737e0b5c 2022-04-04)
+info: downloading component 'cargo'
+info: downloading component 'clippy'
+info: downloading component 'rust-docs'
+info: downloading component 'rust-std'
+info: downloading component 'rustc'
+info: downloading component 'rustfmt'
+info: installing component 'cargo'
+info: installing component 'clippy'
+info: installing component 'rust-docs'
+info: installing component 'rust-std'
+info: installing component 'rustc'
+info: installing component 'rustfmt'
+info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+
+  stable-x86_64-unknown-linux-gnu installed - rustc 1.60.0 (7737e0b5c 2022-04-04)
+
+
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+
+To configure your current shell, run:
+source $HOME/.cargo/env
+    Updating crates.io index
+    Updating git repository `https://github.com/graphql-rust/juniper`
+    Updating git repository `https://github.com/jgrund/sqlx`
+    Updating lexical-core v0.7.4 -> v0.7.6
+info: downloading component 'rust-std' for 'wasm32-unknown-unknown'
+info: installing component 'rust-std' for 'wasm32-unknown-unknown'
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded wasm-pack v0.10.2
+  Installing wasm-pack v0.10.2
+ Downloading crates ...
+  Downloaded cc v1.0.73
+  Downloaded cfg-if v1.0.0
+  Downloaded console v0.6.2
+  Downloaded clicolors-control v0.2.0
+  Downloaded cargo_metadata v0.8.2
+  Downloaded crc32fast v1.3.2
+  Downloaded ryu v1.0.9
+  Downloaded dialoguer v0.3.0
+  Downloaded string v0.2.1
+  Downloaded cfg-if v0.1.10
+  Downloaded parking_lot v0.6.4
+  Downloaded crossbeam-epoch v0.8.2
+  Downloaded smallvec v1.8.0
+  Downloaded clap v2.34.0
+  Downloaded stable_deref_trait v1.2.0
+  Downloaded same-file v1.0.6
+  Downloaded termcolor v1.1.3
+  Downloaded chrono v0.4.19
+  Downloaded unicode-width v0.1.9
+  Downloaded base64 v0.10.1
+  Downloaded autocfg v1.1.0
+  Downloaded tokio-buf v0.1.1
+  Downloaded tokio-threadpool v0.1.18
+  Downloaded tokio-timer v0.2.13
+  Downloaded try_from v0.3.2
+  Downloaded toml v0.4.10
+  Downloaded which v2.0.1
+  Downloaded want v0.2.0
+  Downloaded dirs v1.0.5
+  Downloaded rand_os v0.1.3
+  Downloaded rand_xorshift v0.1.1
+  Downloaded rustc_version v0.2.3
+  Downloaded either v1.6.1
+  Downloaded synstructure v0.12.6
+  Downloaded socket2 v0.4.4
+  Downloaded curl v0.4.43
+  Downloaded structopt v0.3.26
+  Downloaded crossbeam-queue v0.2.3
+  Downloaded structopt-derive v0.4.18
+  Downloaded console v0.15.0
+  Downloaded reqwest v0.9.24
+  Downloaded crossbeam-deque v0.7.4
+  Downloaded smallvec v0.6.14
+  Downloaded tinyvec_macros v0.1.0
+  Downloaded strsim v0.8.0
+  Downloaded crossbeam-utils v0.7.2
+  Downloaded dtoa v0.4.8
+  Downloaded cookie_store v0.7.0
+  Downloaded cookie v0.12.0
+  Downloaded binary-install v0.0.2
+  Downloaded tempfile v2.2.0
+  Downloaded toml v0.5.9
+  Downloaded regex-syntax v0.6.25
+  Downloaded bitflags v1.3.2
+  Downloaded syn v1.0.93
+  Downloaded addr2line v0.17.0
+  Downloaded openssl-sys v0.9.73
+  Downloaded fnv v1.0.7
+  Downloaded parking_lot_core v0.3.1
+  Downloaded adler v1.0.2
+  Downloaded regex v1.5.5
+  Downloaded serde_ignored v0.0.4
+  Downloaded rand v0.3.23
+  Downloaded scopeguard v1.1.0
+  Downloaded terminal_size v0.1.17
+  Downloaded termios v0.3.3
+  Downloaded time v0.1.43
+  Downloaded tokio-io v0.1.13
+  Downloaded tokio-current-thread v0.1.7
+  Downloaded version_check v0.9.4
+  Downloaded tokio-reactor v0.1.12
+  Downloaded autocfg v0.1.8
+  Downloaded atty v0.2.14
+  Downloaded xattr v0.2.3
+  Downloaded unicode-xid v0.2.3
+  Downloaded uuid v0.7.4
+  Downloaded tokio-sync v0.1.8
+  Downloaded tokio v0.1.22
+  Downloaded uuid v0.8.2
+  Downloaded url v1.7.2
+  Downloaded url v2.2.2
+  Downloaded zip v0.5.13
+  Downloaded backtrace v0.3.65
+  Downloaded unicode-normalization v0.1.19
+  Downloaded unicase v2.6.0
+  Downloaded hyper v0.12.36
+  Downloaded unicode-segmentation v1.9.0
+  Downloaded percent-encoding v1.0.1
+  Downloaded os_type v2.4.0
+  Downloaded bzip2-sys v0.1.11+1.0.8
+  Downloaded textwrap v0.11.0
+  Downloaded rand_jitter v0.1.4
+  Downloaded proc-macro-error-attr v1.0.4
+  Downloaded rustc-demangle v0.1.21
+  Downloaded semver v0.9.0
+  Downloaded hex v0.3.2
+  Downloaded matches v0.1.9
+  Downloaded parking_lot_core v0.6.2
+  Downloaded futures v0.1.31
+  Downloaded serde_derive v1.0.137
+  Downloaded parking_lot v0.9.0
+  Downloaded flate2 v1.0.23
+  Downloaded foreign-types-shared v0.1.1
+  Downloaded semver-parser v0.7.0
+  Downloaded quick-error v1.2.3
+  Downloaded filetime v0.2.16
+  Downloaded failure v0.1.8
+  Downloaded lazy_static v1.4.0
+  Downloaded itoa v0.4.8
+  Downloaded num-integer v0.1.45
+  Downloaded http v0.1.21
+  Downloaded iovec v0.1.4
+  Downloaded proc-macro-error v1.0.4
+  Downloaded lock_api v0.4.7
+  Downloaded parking_lot_core v0.9.3
+  Downloaded h2 v0.1.26
+  Downloaded publicsuffix v1.5.6
+  Downloaded foreign-types v0.3.2
+  Downloaded form_urlencoded v1.0.1
+  Downloaded http-body v0.1.0
+  Downloaded env_logger v0.5.13
+  Downloaded hashbrown v0.11.2
+  Downloaded memoffset v0.5.6
+  Downloaded lock_api v0.1.5
+  Downloaded hyper-tls v0.3.2
+  Downloaded rand v0.4.6
+  Downloaded bytes v0.4.12
+  Downloaded aho-corasick v0.7.18
+  Downloaded bzip2 v0.4.3
+  Downloaded scopeguard v0.3.3
+  Downloaded failure_derive v0.1.8
+  Downloaded byteorder v1.4.3
+  Downloaded siphasher v0.2.3
+  Downloaded proc-macro2 v1.0.38
+  Downloaded rand_pcg v0.1.2
+  Downloaded walkdir v2.3.2
+  Downloaded unicode-bidi v0.3.8
+  Downloaded ansi_term v0.12.1
+  Downloaded vec_map v0.8.2
+  Downloaded try-lock v0.2.3
+  Downloaded tokio-tcp v0.1.4
+  Downloaded tokio-executor v0.1.10
+  Downloaded tinyvec v1.6.0
+  Downloaded thiserror-impl v1.0.31
+  Downloaded glob v0.2.11
+  Downloaded getrandom v0.2.6
+  Downloaded futures-cpupool v0.1.8
+  Downloaded thiserror v1.0.31
+  Downloaded rand v0.5.6
+  Downloaded tar v0.4.38
+  Downloaded mime v0.3.16
+  Downloaded lazy_static v0.2.11
+  Downloaded quote v1.0.18
+  Downloaded native-tls v0.2.10
+  Downloaded maybe-uninit v2.0.0
+  Downloaded itoa v1.0.1
+  Downloaded is_executable v0.1.2
+  Downloaded num-traits v0.2.15
+  Downloaded mio v0.6.23
+  Downloaded openssl-probe v0.1.5
+  Downloaded heck v0.3.3
+  Downloaded lock_api v0.3.4
+  Downloaded indexmap v1.8.1
+  Downloaded net2 v0.2.37
+  Downloaded httparse v1.7.1
+  Downloaded num_cpus v1.13.1
+  Downloaded log v0.4.17
+  Downloaded owning_ref v0.4.1
+  Downloaded openssl v0.10.40
+  Downloaded humantime v1.3.0
+  Downloaded human-panic v1.0.3
+  Downloaded rand v0.6.5
+  Downloaded pkg-config v0.3.25
+  Downloaded rand_chacha v0.1.1
+  Downloaded rand_hc v0.1.0
+  Downloaded rand_isaac v0.1.1
+  Downloaded parking_lot v0.12.0
+  Downloaded gimli v0.26.1
+  Downloaded rand_core v0.4.2
+  Downloaded mime_guess v2.0.4
+  Downloaded memchr v2.5.0
+  Downloaded serde_urlencoded v0.5.5
+  Downloaded idna v0.2.3
+  Downloaded percent-encoding v2.1.0
+  Downloaded openssl-macros v0.1.0
+  Downloaded miniz_oxide v0.5.1
+  Downloaded slab v0.4.6
+  Downloaded rand_core v0.3.1
+  Downloaded once_cell v1.10.0
+  Downloaded serde v1.0.137
+  Downloaded object v0.28.4
+  Downloaded serde_json v1.0.81
+  Downloaded encoding_rs v0.8.31
+  Downloaded idna v0.1.5
+  Downloaded curl-sys v0.4.55+curl-7.83.1
+  Downloaded libz-sys v1.1.6
+  Downloaded libc v0.2.125
+  Downloaded openssl-src v111.18.0+1.1.1n
+   Compiling libc v0.2.125
+   Compiling autocfg v1.1.0
+   Compiling proc-macro2 v1.0.38
+   Compiling unicode-xid v0.2.3
+   Compiling syn v1.0.93
+   Compiling serde_derive v1.0.137
+   Compiling serde v1.0.137
+   Compiling cfg-if v1.0.0
+   Compiling cc v1.0.73
+   Compiling pkg-config v0.3.25
+   Compiling cfg-if v0.1.10
+   Compiling semver-parser v0.7.0
+   Compiling maybe-uninit v2.0.0
+   Compiling version_check v0.9.4
+   Compiling futures v0.1.31
+   Compiling lazy_static v1.4.0
+   Compiling byteorder v1.4.3
+   Compiling memchr v2.5.0
+   Compiling log v0.4.17
+   Compiling scopeguard v1.1.0
+   Compiling rand_core v0.4.2
+   Compiling either v1.6.1
+   Compiling tinyvec_macros v0.1.0
+   Compiling slab v0.4.6
+   Compiling adler v1.0.2
+   Compiling matches v0.1.9
+   Compiling fnv v1.0.7
+   Compiling unicode-bidi v0.3.8
+   Compiling gimli v0.26.1
+   Compiling rustc-demangle v0.1.21
+   Compiling itoa v0.4.8
+   Compiling failure_derive v0.1.8
+   Compiling regex-syntax v0.6.25
+   Compiling unicode-width v0.1.9
+   Compiling bitflags v1.3.2
+   Compiling once_cell v1.10.0
+   Compiling crc32fast v1.3.2
+   Compiling percent-encoding v1.0.1
+   Compiling openssl v0.10.40
+   Compiling hashbrown v0.11.2
+   Compiling openssl-probe v0.1.5
+   Compiling httparse v1.7.1
+   Compiling serde_json v1.0.81
+   Compiling foreign-types-shared v0.1.1
+   Compiling percent-encoding v2.1.0
+   Compiling ryu v1.0.9
+   Compiling try-lock v0.2.3
+   Compiling parking_lot_core v0.9.3
+   Compiling itoa v1.0.1
+   Compiling native-tls v0.2.10
+   Compiling unicode-segmentation v1.9.0
+   Compiling stable_deref_trait v1.2.0
+   Compiling smallvec v1.8.0
+   Compiling curl v0.4.43
+   Compiling encoding_rs v0.8.31
+   Compiling strsim v0.8.0
+   Compiling scopeguard v0.3.3
+   Compiling lazy_static v0.2.11
+   Compiling termcolor v1.1.3
+   Compiling ansi_term v0.12.1
+   Compiling dtoa v0.4.8
+   Compiling vec_map v0.8.2
+   Compiling mime v0.3.16
+   Compiling quick-error v1.2.3
+   Compiling siphasher v0.2.3
+   Compiling is_executable v0.1.2
+   Compiling hex v0.3.2
+   Compiling same-file v1.0.6
+   Compiling glob v0.2.11
+   Compiling autocfg v0.1.8
+   Compiling crossbeam-utils v0.7.2
+   Compiling memoffset v0.5.6
+   Compiling crossbeam-epoch v0.8.2
+   Compiling indexmap v1.8.1
+   Compiling num-traits v0.2.15
+   Compiling lock_api v0.4.7
+   Compiling num-integer v0.1.45
+   Compiling try_from v0.3.2
+   Compiling openssl-src v111.18.0+1.1.1n
+   Compiling base64 v0.10.1
+   Compiling unicase v2.6.0
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling proc-macro-error v1.0.4
+   Compiling lock_api v0.3.4
+   Compiling tinyvec v1.6.0
+   Compiling rand_core v0.3.1
+   Compiling rand_jitter v0.1.4
+   Compiling miniz_oxide v0.5.1
+   Compiling backtrace v0.3.65
+   Compiling libz-sys v1.1.6
+   Compiling curl-sys v0.4.55+curl-7.83.1
+   Compiling bzip2-sys v0.1.11+1.0.8
+   Compiling tokio-sync v0.1.8
+   Compiling textwrap v0.11.0
+   Compiling foreign-types v0.3.2
+   Compiling form_urlencoded v1.0.1
+   Compiling owning_ref v0.4.1
+   Compiling heck v0.3.3
+   Compiling addr2line v0.17.0
+   Compiling humantime v1.3.0
+   Compiling walkdir v2.3.2
+   Compiling rand_pcg v0.1.2
+   Compiling rand_chacha v0.1.1
+   Compiling rand v0.6.5
+   Compiling openssl-sys v0.9.73
+   Compiling rand_xorshift v0.1.1
+   Compiling rand_isaac v0.1.1
+   Compiling rand_hc v0.1.0
+   Compiling unicode-normalization v0.1.19
+   Compiling lock_api v0.1.5
+   Compiling quote v1.0.18
+   Compiling smallvec v0.6.14
+   Compiling iovec v0.1.4
+   Compiling num_cpus v1.13.1
+   Compiling time v0.1.43
+   Compiling net2 v0.2.37
+   Compiling atty v0.2.14
+   Compiling rand_os v0.1.3
+   Compiling rand v0.4.6
+   Compiling getrandom v0.2.6
+   Compiling xattr v0.2.3
+   Compiling rand v0.5.6
+   Compiling socket2 v0.4.4
+   Compiling filetime v0.2.16
+   Compiling terminal_size v0.1.17
+   Compiling dirs v1.0.5
+   Compiling clicolors-control v0.2.0
+   Compiling termios v0.3.3
+   Compiling want v0.2.0
+   Compiling object v0.28.4
+   Compiling aho-corasick v0.7.18
+   Compiling flate2 v1.0.23
+   Compiling idna v0.1.5
+   Compiling idna v0.2.3
+   Compiling bytes v0.4.12
+   Compiling futures-cpupool v0.1.8
+   Compiling clap v2.34.0
+   Compiling env_logger v0.5.13
+   Compiling mio v0.6.23
+   Compiling rand v0.3.23
+   Compiling uuid v0.8.2
+   Compiling tar v0.4.38
+   Compiling parking_lot v0.12.0
+   Compiling tokio-executor v0.1.10
+   Compiling crossbeam-queue v0.2.3
+   Compiling mime_guess v2.0.4
+   Compiling regex v1.5.5
+   Compiling url v1.7.2
+   Compiling url v2.2.2
+   Compiling tokio-io v0.1.13
+   Compiling http v0.1.21
+   Compiling string v0.2.1
+   Compiling tokio-buf v0.1.1
+   Compiling tempfile v2.2.0
+   Compiling synstructure v0.12.6
+   Compiling bzip2 v0.4.3
+   Compiling tokio-timer v0.2.13
+   Compiling tokio-current-thread v0.1.7
+   Compiling crossbeam-deque v0.7.4
+   Compiling chrono v0.4.19
+   Compiling cookie v0.12.0
+   Compiling console v0.15.0
+   Compiling os_type v2.4.0
+   Compiling console v0.6.2
+   Compiling publicsuffix v1.5.6
+   Compiling uuid v0.7.4
+   Compiling openssl-macros v0.1.0
+   Compiling thiserror-impl v1.0.31
+   Compiling h2 v0.1.26
+   Compiling http-body v0.1.0
+   Compiling structopt-derive v0.4.18
+   Compiling tokio-threadpool v0.1.18
+   Compiling dialoguer v0.3.0
+   Compiling failure v0.1.8
+   Compiling thiserror v1.0.31
+   Compiling structopt v0.3.26
+   Compiling which v2.0.1
+   Compiling zip v0.5.13
+   Compiling semver v0.9.0
+   Compiling toml v0.5.9
+   Compiling serde_urlencoded v0.5.5
+   Compiling toml v0.4.10
+   Compiling serde_ignored v0.0.4
+   Compiling rustc_version v0.2.3
+   Compiling cookie_store v0.7.0
+   Compiling human-panic v1.0.3
+   Compiling cargo_metadata v0.8.2
+   Compiling parking_lot_core v0.6.2
+   Compiling parking_lot v0.9.0
+   Compiling hyper v0.12.36
+   Compiling parking_lot_core v0.3.1
+   Compiling tokio-reactor v0.1.12
+   Compiling parking_lot v0.6.4
+   Compiling tokio-tcp v0.1.4
+   Compiling tokio v0.1.22
+   Compiling hyper-tls v0.3.2
+   Compiling reqwest v0.9.24
+   Compiling binary-install v0.0.2
+   Compiling wasm-pack v0.10.2
+    Finished release [optimized] target(s) in 4m 23s
+  Installing /root/.cargo/bin/wasm-pack
+   Installed package `wasm-pack v0.10.2` (executable `wasm-pack`)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded cargo-make v0.35.12
+  Installing cargo-make v0.35.12
+ Downloading crates ...
+  Downloaded winapi-build v0.1.1
+  Downloaded base64 v0.13.0
+  Downloaded attohttpc v0.18.0
+  Downloaded cargo-platform v0.1.2
+  Downloaded camino v1.0.8
+  Downloaded block-buffer v0.10.2
+  Downloaded crossbeam-utils v0.8.8
+  Downloaded clap_lex v0.2.0
+  Downloaded colored v2.0.0
+  Downloaded encoding_index_tests v0.1.4
+  Downloaded chrono v0.2.25
+  Downloaded ignore v0.4.18
+  Downloaded digest v0.10.3
+  Downloaded cpufeatures v0.2.2
+  Downloaded heck v0.4.0
+  Downloaded generic-array v0.14.5
+  Downloaded dirs-sys-next v0.1.2
+  Downloaded dirs-next v2.0.0
+  Downloaded crypto-common v0.1.3
+  Downloaded winapi v0.2.8
+  Downloaded java-properties v1.4.1
+  Downloaded ftp v3.0.1
+  Downloaded meval v0.2.0
+  Downloaded nom v1.2.4
+  Downloaded num v0.1.42
+  Downloaded memchr v0.1.11
+  Downloaded lenient_semver_parser v0.4.2
+  Downloaded duckscript v0.7.2
+  Downloaded lenient_semver_version_builder v0.4.2
+  Downloaded thread_local v0.2.7
+  Downloaded regex v0.1.80
+  Downloaded glob v0.3.0
+  Downloaded encoding v0.2.33
+  Downloaded encoding-index-singlebyte v1.20141219.5
+  Downloaded encoding-index-korean v1.20141219.5
+  Downloaded home v0.5.3
+  Downloaded globset v0.4.8
+  Downloaded bytes v1.1.0
+  Downloaded fs_extra v1.2.0
+  Downloaded rand v0.8.5
+  Downloaded http v0.2.7
+  Downloaded thread-id v2.0.0
+  Downloaded duckscriptsdk v0.8.11
+  Downloaded serde_ignored v0.1.3
+  Downloaded utf8-ranges v0.1.3
+  Downloaded whoami v1.2.1
+  Downloaded uname v0.1.1
+  Downloaded users v0.11.0
+  Downloaded encoding-index-tradchinese v1.20141219.5
+  Downloaded typenum v1.15.0
+  Downloaded semver v1.0.9
+  Downloaded textwrap v0.15.0
+  Downloaded strsim v0.10.0
+  Downloaded os_str_bytes v6.0.0
+  Downloaded clap v3.1.18
+  Downloaded sha2 v0.10.2
+  Downloaded kernel32-sys v0.2.2
+  Downloaded cargo_metadata v0.14.2
+  Downloaded rand_chacha v0.3.1
+  Downloaded encoding-index-simpchinese v1.20141219.5
+  Downloaded ppv-lite86 v0.2.16
+  Downloaded num-iter v0.1.43
+  Downloaded encoding-index-japanese v1.20141219.5
+  Downloaded which v4.2.5
+  Downloaded thread_local v1.1.4
+  Downloaded rand_core v0.6.3
+  Downloaded regex-syntax v0.3.9
+  Downloaded wildmatch v2.1.0
+  Downloaded aho-corasick v0.5.3
+  Downloaded lenient_semver v0.4.2
+  Downloaded bstr v0.2.17
+  Downloaded fern v0.6.1
+  Downloaded lazy_static v0.1.16
+  Downloaded git_info v0.1.2
+  Downloaded fsio v0.3.0
+  Downloaded rust_info v0.3.2
+  Downloaded run_script v0.9.0
+  Downloaded ci_info v0.14.5
+  Downloaded envmnt v0.10.0
+  Downloaded shell2batch v0.4.4
+   Compiling libc v0.2.125
+   Compiling autocfg v1.1.0
+   Compiling proc-macro2 v1.0.38
+   Compiling unicode-xid v0.2.3
+   Compiling syn v1.0.93
+   Compiling cfg-if v1.0.0
+   Compiling serde_derive v1.0.137
+   Compiling serde v1.0.137
+   Compiling log v0.4.17
+   Compiling memchr v2.5.0
+   Compiling pkg-config v0.3.25
+   Compiling cc v1.0.73
+   Compiling version_check v0.9.4
+   Compiling typenum v1.15.0
+   Compiling encoding_index_tests v0.1.4
+   Compiling winapi-build v0.1.1
+   Compiling ppv-lite86 v0.2.16
+   Compiling semver v1.0.9
+   Compiling regex-syntax v0.6.25
+   Compiling once_cell v1.10.0
+   Compiling winapi v0.2.8
+   Compiling fnv v1.0.7
+   Compiling tinyvec_macros v0.1.0
+   Compiling itoa v1.0.1
+   Compiling openssl v0.10.40
+   Compiling crc32fast v1.3.2
+   Compiling lazy_static v1.4.0
+   Compiling foreign-types-shared v0.1.1
+   Compiling matches v0.1.9
+   Compiling bitflags v1.3.2
+   Compiling native-tls v0.2.10
+   Compiling adler v1.0.2
+   Compiling crossbeam-utils v0.8.8
+   Compiling serde_json v1.0.81
+   Compiling percent-encoding v2.1.0
+   Compiling hashbrown v0.11.2
+   Compiling unicode-bidi v0.3.8
+   Compiling utf8-ranges v0.1.3
+   Compiling openssl-probe v0.1.5
+   Compiling regex-syntax v0.3.9
+   Compiling same-file v1.0.6
+   Compiling bytes v1.1.0
+   Compiling ryu v1.0.9
+   Compiling camino v1.0.8
+   Compiling wildmatch v2.1.0
+   Compiling lazy_static v0.1.16
+   Compiling cpufeatures v0.2.2
+   Compiling nom v1.2.4
+   Compiling either v1.6.1
+   Compiling os_str_bytes v6.0.0
+   Compiling heck v0.4.0
+   Compiling textwrap v0.15.0
+   Compiling strsim v0.10.0
+   Compiling whoami v1.2.1
+   Compiling home v0.5.3
+   Compiling glob v0.3.0
+   Compiling base64 v0.13.0
+   Compiling termcolor v1.1.3
+   Compiling fs_extra v1.2.0
+   Compiling rust_info v0.3.2
+   Compiling git_info v0.1.2
+   Compiling num-traits v0.2.15
+   Compiling num-integer v0.1.45
+   Compiling num-iter v0.1.43
+   Compiling indexmap v1.8.1
+   Compiling encoding-index-tradchinese v1.20141219.5
+   Compiling encoding-index-simpchinese v1.20141219.5
+   Compiling encoding-index-japanese v1.20141219.5
+   Compiling encoding-index-korean v1.20141219.5
+   Compiling encoding-index-singlebyte v1.20141219.5
+   Compiling kernel32-sys v0.2.2
+   Compiling generic-array v0.14.5
+   Compiling thread_local v1.1.4
+   Compiling tinyvec v1.6.0
+   Compiling foreign-types v0.3.2
+   Compiling miniz_oxide v0.5.1
+   Compiling form_urlencoded v1.0.1
+   Compiling openssl-sys v0.9.73
+   Compiling walkdir v2.3.2
+   Compiling http v0.2.7
+   Compiling clap_lex v0.2.0
+   Compiling meval v0.2.0
+   Compiling encoding v0.2.33
+   Compiling unicode-normalization v0.1.19
+   Compiling fern v0.6.1
+   Compiling quote v1.0.18
+   Compiling aho-corasick v0.7.18
+   Compiling bstr v0.2.17
+   Compiling getrandom v0.2.6
+   Compiling users v0.11.0
+   Compiling memchr v0.1.11
+   Compiling time v0.1.43
+   Compiling atty v0.2.14
+   Compiling uname v0.1.1
+   Compiling dirs-sys-next v0.1.2
+   Compiling which v4.2.5
+   Compiling num_cpus v1.13.1
+   Compiling flate2 v1.0.23
+   Compiling rand_core v0.6.3
+   Compiling regex v1.5.5
+   Compiling idna v0.2.3
+   Compiling aho-corasick v0.5.3
+   Compiling colored v2.0.0
+   Compiling dirs-next v2.0.0
+   Compiling thread-id v2.0.0
+   Compiling rand_chacha v0.3.1
+   Compiling crypto-common v0.1.3
+   Compiling block-buffer v0.10.2
+   Compiling url v2.2.2
+   Compiling thread_local v0.2.7
+   Compiling globset v0.4.8
+   Compiling java-properties v1.4.1
+   Compiling shell2batch v0.4.4
+   Compiling rand v0.8.5
+   Compiling digest v0.10.3
+   Compiling regex v0.1.80
+   Compiling ignore v0.4.18
+   Compiling sha2 v0.10.2
+   Compiling fsio v0.3.0
+   Compiling num v0.1.42
+   Compiling duckscript v0.7.2
+   Compiling run_script v0.9.0
+   Compiling chrono v0.2.25
+   Compiling openssl-macros v0.1.0
+   Compiling ftp v3.0.1
+   Compiling attohttpc v0.18.0
+   Compiling cargo-platform v0.1.2
+   Compiling serde_ignored v0.1.3
+   Compiling toml v0.5.9
+   Compiling lenient_semver_version_builder v0.4.2
+   Compiling envmnt v0.10.0
+   Compiling clap v3.1.18
+   Compiling lenient_semver_parser v0.4.2
+   Compiling ci_info v0.14.5
+   Compiling duckscriptsdk v0.8.11
+   Compiling cargo_metadata v0.14.2
+   Compiling lenient_semver v0.4.2
+   Compiling cargo-make v0.35.12
+    Finished release [optimized] target(s) in 3m 49s
+  Installing /root/.cargo/bin/cargo-make
+  Installing /root/.cargo/bin/makers
+   Installed package `cargo-make v0.35.12` (executables `cargo-make`, `makers`)
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.xtom.com
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Package yum-utils-1.1.31-54.el7_8.noarch already installed and latest version
+Nothing to do
+Loaded plugins: fastestmirror
+adding repo from: https://download.docker.com/linux/centos/docker-ce.repo
+grabbing file https://download.docker.com/linux/centos/docker-ce.repo to /etc/yum.repos.d/docker-ce.repo
+repo saved to /etc/yum.repos.d/docker-ce.repo
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: sjc.edge.kernel.org
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Resolving Dependencies
+--> Running transaction check
+---> Package containerd.io.x86_64 0:1.6.4-3.1.el7 will be installed
+--> Processing Dependency: container-selinux >= 2:2.74 for package: containerd.io-1.6.4-3.1.el7.x86_64
+---> Package docker-ce.x86_64 3:20.10.16-3.el7 will be installed
+--> Processing Dependency: docker-ce-rootless-extras for package: 3:docker-ce-20.10.16-3.el7.x86_64
+---> Package docker-ce-cli.x86_64 1:20.10.16-3.el7 will be installed
+--> Processing Dependency: docker-scan-plugin(x86-64) for package: 1:docker-ce-cli-20.10.16-3.el7.x86_64
+---> Package docker-compose-plugin.x86_64 0:2.5.0-3.el7 will be installed
+--> Running transaction check
+---> Package container-selinux.noarch 2:2.119.2-1.911c772.el7_8 will be installed
+---> Package docker-ce-rootless-extras.x86_64 0:20.10.16-3.el7 will be installed
+--> Processing Dependency: fuse-overlayfs >= 0.7 for package: docker-ce-rootless-extras-20.10.16-3.el7.x86_64
+--> Processing Dependency: slirp4netns >= 0.4 for package: docker-ce-rootless-extras-20.10.16-3.el7.x86_64
+---> Package docker-scan-plugin.x86_64 0:0.17.0-3.el7 will be installed
+--> Running transaction check
+---> Package fuse-overlayfs.x86_64 0:0.7.2-6.el7_8 will be installed
+--> Processing Dependency: libfuse3.so.3(FUSE_3.2)(64bit) for package: fuse-overlayfs-0.7.2-6.el7_8.x86_64
+--> Processing Dependency: libfuse3.so.3(FUSE_3.0)(64bit) for package: fuse-overlayfs-0.7.2-6.el7_8.x86_64
+--> Processing Dependency: libfuse3.so.3()(64bit) for package: fuse-overlayfs-0.7.2-6.el7_8.x86_64
+---> Package slirp4netns.x86_64 0:0.4.3-4.el7_8 will be installed
+--> Running transaction check
+---> Package fuse3-libs.x86_64 0:3.6.1-4.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch   Version                   Repository        Size
+================================================================================
+Installing:
+ containerd.io          x86_64 1.6.4-3.1.el7             docker-ce-stable  33 M
+ docker-ce              x86_64 3:20.10.16-3.el7          docker-ce-stable  22 M
+ docker-ce-cli          x86_64 1:20.10.16-3.el7          docker-ce-stable  29 M
+ docker-compose-plugin  x86_64 2.5.0-3.el7               docker-ce-stable 7.0 M
+Installing for dependencies:
+ container-selinux      noarch 2:2.119.2-1.911c772.el7_8 extras            40 k
+ docker-ce-rootless-extras
+                        x86_64 20.10.16-3.el7            docker-ce-stable 8.2 M
+ docker-scan-plugin     x86_64 0.17.0-3.el7              docker-ce-stable 3.7 M
+ fuse-overlayfs         x86_64 0.7.2-6.el7_8             extras            54 k
+ fuse3-libs             x86_64 3.6.1-4.el7               extras            82 k
+ slirp4netns            x86_64 0.4.3-4.el7_8             extras            81 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages (+6 Dependent packages)
+
+Total download size: 104 M
+Installed size: 419 M
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/docker-ce-stable/packages/containerd.io-1.6.4-3.1.el7.x86_64.rpm: Header V4 RSA/SHA512 Signature, key ID 621e9f35: NOKEY
+Public key for containerd.io-1.6.4-3.1.el7.x86_64.rpm is not installed
+--------------------------------------------------------------------------------
+Total                                              5.0 MB/s | 104 MB  00:20     
+Retrieving key from https://download.docker.com/linux/centos/gpg
+Importing GPG key 0x621E9F35:
+ Userid     : "Docker Release (CE rpm) <docker@docker.com>"
+ Fingerprint: 060a 61c5 1b55 8a7f 742b 77aa c52f eb6b 621e 9f35
+ From       : https://download.docker.com/linux/centos/gpg
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 2:container-selinux-2.119.2-1.911c772.el7_8.noarch          1/10 
+  Installing : containerd.io-1.6.4-3.1.el7.x86_64                          2/10 
+  Installing : 1:docker-ce-cli-20.10.16-3.el7.x86_64                       3/10 
+  Installing : docker-scan-plugin-0.17.0-3.el7.x86_64                      4/10 
+  Installing : slirp4netns-0.4.3-4.el7_8.x86_64                            5/10 
+  Installing : fuse3-libs-3.6.1-4.el7.x86_64                               6/10 
+  Installing : fuse-overlayfs-0.7.2-6.el7_8.x86_64                         7/10 
+  Installing : 3:docker-ce-20.10.16-3.el7.x86_64                           8/10 
+  Installing : docker-ce-rootless-extras-20.10.16-3.el7.x86_64             9/10 
+  Installing : docker-compose-plugin-2.5.0-3.el7.x86_64                   10/10 
+  Verifying  : fuse3-libs-3.6.1-4.el7.x86_64                               1/10 
+  Verifying  : docker-ce-rootless-extras-20.10.16-3.el7.x86_64             2/10 
+  Verifying  : fuse-overlayfs-0.7.2-6.el7_8.x86_64                         3/10 
+  Verifying  : docker-compose-plugin-2.5.0-3.el7.x86_64                    4/10 
+  Verifying  : slirp4netns-0.4.3-4.el7_8.x86_64                            5/10 
+  Verifying  : 2:container-selinux-2.119.2-1.911c772.el7_8.noarch          6/10 
+  Verifying  : containerd.io-1.6.4-3.1.el7.x86_64                          7/10 
+  Verifying  : docker-scan-plugin-0.17.0-3.el7.x86_64                      8/10 
+  Verifying  : 1:docker-ce-cli-20.10.16-3.el7.x86_64                       9/10 
+  Verifying  : 3:docker-ce-20.10.16-3.el7.x86_64                          10/10 
+
+Installed:
+  containerd.io.x86_64 0:1.6.4-3.1.el7                                          
+  docker-ce.x86_64 3:20.10.16-3.el7                                             
+  docker-ce-cli.x86_64 1:20.10.16-3.el7                                         
+  docker-compose-plugin.x86_64 0:2.5.0-3.el7                                    
+
+Dependency Installed:
+  container-selinux.noarch 2:2.119.2-1.911c772.el7_8                            
+  docker-ce-rootless-extras.x86_64 0:20.10.16-3.el7                             
+  docker-scan-plugin.x86_64 0:0.17.0-3.el7                                      
+  fuse-overlayfs.x86_64 0:0.7.2-6.el7_8                                         
+  fuse3-libs.x86_64 0:3.6.1-4.el7                                               
+  slirp4netns.x86_64 0:0.4.3-4.el7_8                                            
+
+Complete!
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.fcix.net
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Package python-2.7.5-90.el7.x86_64 already installed and latest version
+No package postgresql96 available.
+Package 1:openssl-1.0.2k-25.el7_9.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc-c++.x86_64 0:4.8.5-44.el7 will be installed
+--> Processing Dependency: libstdc++-devel = 4.8.5-44.el7 for package: gcc-c++-4.8.5-44.el7.x86_64
+---> Package python-devel.x86_64 0:2.7.5-90.el7 will be installed
+--> Processing Dependency: python2-rpm-macros > 3-30 for package: python-devel-2.7.5-90.el7.x86_64
+--> Processing Dependency: python-rpm-macros > 3-30 for package: python-devel-2.7.5-90.el7.x86_64
+---> Package python2-pbr.noarch 0:4.2.0-3.el7 will be installed
+---> Package python2-pip.noarch 0:8.1.2-14.el7 will be installed
+--> Running transaction check
+---> Package libstdc++-devel.x86_64 0:4.8.5-44.el7 will be installed
+---> Package python-rpm-macros.noarch 0:3-34.el7 will be installed
+---> Package python2-rpm-macros.noarch 0:3-34.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                  Arch         Version              Repository     Size
+================================================================================
+Installing:
+ gcc-c++                  x86_64       4.8.5-44.el7         base          7.2 M
+ python-devel             x86_64       2.7.5-90.el7         updates       399 k
+ python2-pbr              noarch       4.2.0-3.el7          epel          188 k
+ python2-pip              noarch       8.1.2-14.el7         epel          1.7 M
+Installing for dependencies:
+ libstdc++-devel          x86_64       4.8.5-44.el7         base          1.5 M
+ python-rpm-macros        noarch       3-34.el7             base          9.1 k
+ python2-rpm-macros       noarch       3-34.el7             base          8.1 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages (+3 Dependent packages)
+
+Total download size: 11 M
+Installed size: 33 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              3.9 MB/s |  11 MB  00:02     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libstdc++-devel-4.8.5-44.el7.x86_64                          1/7 
+  Installing : python-rpm-macros-3-34.el7.noarch                            2/7 
+  Installing : python2-rpm-macros-3-34.el7.noarch                           3/7 
+  Installing : python-devel-2.7.5-90.el7.x86_64                             4/7 
+  Installing : gcc-c++-4.8.5-44.el7.x86_64                                  5/7 
+  Installing : python2-pip-8.1.2-14.el7.noarch                              6/7 
+  Installing : python2-pbr-4.2.0-3.el7.noarch                               7/7 
+  Verifying  : python2-pbr-4.2.0-3.el7.noarch                               1/7 
+  Verifying  : gcc-c++-4.8.5-44.el7.x86_64                                  2/7 
+  Verifying  : python-devel-2.7.5-90.el7.x86_64                             3/7 
+  Verifying  : python2-pip-8.1.2-14.el7.noarch                              4/7 
+  Verifying  : python2-rpm-macros-3-34.el7.noarch                           5/7 
+  Verifying  : python-rpm-macros-3-34.el7.noarch                            6/7 
+  Verifying  : libstdc++-devel-4.8.5-44.el7.x86_64                          7/7 
+
+Installed:
+  gcc-c++.x86_64 0:4.8.5-44.el7         python-devel.x86_64 0:2.7.5-90.el7     
+  python2-pbr.noarch 0:4.2.0-3.el7      python2-pip.noarch 0:8.1.2-14.el7      
+
+Dependency Installed:
+  libstdc++-devel.x86_64 0:4.8.5-44.el7   python-rpm-macros.noarch 0:3-34.el7  
+  python2-rpm-macros.noarch 0:3-34.el7   
+
+Complete!
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 11.6M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 38 11.6M   38 4584k    0     0  2724k      0  0:00:04  0:00:01  0:00:03 5737k 87 11.6M   87 10.1M    0     0  3891k      0  0:00:03  0:00:02  0:00:01 5800k100 11.6M  100 11.6M    0     0  4053k      0  0:00:02  0:00:02 --:--:-- 5786k

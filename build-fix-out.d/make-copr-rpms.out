@@ -1,0 +1,1643 @@
+make -f .copr/Makefile srpm outdir=.
+make[1]: Entering directory `/root/integrated-manager-for-lustre'
+mkdir -p /tmp/tmp.F7z5fzYZRY/_topdir/{SOURCES,SPECS}
+mkdir -p /tmp/tmp.F7z5fzYZRY/release/rust-iml
+cargo build --release
+ Downloading crates ...
+  Downloaded amq-protocol v6.0.0-rc12
+  Downloaded addr2line v0.14.0
+  Downloaded amq-protocol-types v6.0.0-rc12
+  Downloaded block-buffer v0.9.0
+  Downloaded ahash v0.4.7
+  Downloaded block-modes v0.6.1
+  Downloaded async-task v4.0.3
+  Downloaded async-trait v0.1.42
+  Downloaded autocfg v0.1.7
+  Downloaded cexpr v0.3.6
+  Downloaded cpuid-bool v0.1.2
+  Downloaded deadpool v0.5.2
+  Downloaded crypto-mac v0.9.1
+  Downloaded cryptovec v0.6.0
+  Downloaded console v0.11.3
+  Downloaded crc32fast v1.2.1
+  Downloaded elementtree v0.5.0
+  Downloaded device-types v0.3.0
+  Downloaded data-encoding v2.3.1
+  Downloaded block-padding v0.2.1
+  Downloaded buf_redux v0.8.4
+  Downloaded bitmaps v2.1.0
+  Downloaded arrayvec v0.5.2
+  Downloaded byte-tools v0.3.1
+  Downloaded digest v0.9.0
+  Downloaded base64 v0.12.3
+  Downloaded futures-enum v0.1.15
+  Downloaded futures-core v0.3.8
+  Downloaded cookie-factory v0.3.1
+  Downloaded futures-sink v0.3.8
+  Downloaded futures v0.3.8
+  Downloaded dialoguer v0.6.2
+  Downloaded futures-channel v0.3.8
+  Downloaded atoi v0.3.3
+  Downloaded crc v1.8.1
+  Downloaded byteorder v1.3.4
+  Downloaded build_const v0.2.1
+  Downloaded ahash v0.5.10
+  Downloaded dtoa v0.4.6
+  Downloaded doc-comment v0.3.3
+  Downloaded bindgen v0.49.4
+  Downloaded version_check v0.1.5
+  Downloaded futures-executor v0.3.8
+  Downloaded crossbeam-channel v0.4.4
+  Downloaded console v0.9.2
+  Downloaded bit-vec v0.6.3
+  Downloaded ascii v0.9.3
+  Downloaded block-padding v0.1.5
+  Downloaded autocfg v1.0.1
+  Downloaded futures-util v0.3.8
+  Downloaded dotenv v0.15.0
+  Downloaded deadpool-lapin v0.6.0
+  Downloaded cc v1.0.66
+  Downloaded dyn-clone v1.0.3
+  Downloaded fallible-iterator v0.2.0
+  Downloaded fxhash v0.2.1
+  Downloaded fixedbitset v0.2.0
+  Downloaded exitcode v1.1.2
+  Downloaded env_logger v0.6.2
+  Downloaded dirs v3.0.1
+  Downloaded bytes v0.5.6
+  Downloaded form_urlencoded v1.0.0
+  Downloaded dns-lookup v1.0.5
+  Downloaded flate2 v1.0.19
+  Downloaded urlencoding v1.1.1
+  Downloaded errno v0.2.7
+  Downloaded encode_unicode v0.3.6
+  Downloaded dirs-sys v0.3.5
+  Downloaded byte-unit v2.1.0
+  Downloaded clicolors-control v1.0.1
+  Downloaded bson v1.1.0
+  Downloaded cargo_metadata v0.12.1
+  Downloaded ansi_term v0.7.5
+  Downloaded ansi_term v0.11.0
+  Downloaded futures-macro v0.3.8
+  Downloaded clap v2.33.3
+  Downloaded derive_utils v0.11.0
+  Downloaded bitflags v1.2.1
+  Downloaded csv-core v0.1.10
+  Downloaded fake-simd v0.1.2
+  Downloaded dirs v2.0.2
+  Downloaded digest v0.8.1
+  Downloaded block-buffer v0.7.3
+  Downloaded amq-protocol-uri v6.0.0-rc12
+  Downloaded adler v0.2.3
+  Downloaded console v0.13.0
+  Downloaded chrono-humanize v0.0.11
+  Downloaded des v0.5.0
+  Downloaded unicode-segmentation v1.7.1
+  Downloaded hostlist-parser v0.1.3
+  Downloaded combine v3.8.1
+  Downloaded rc2 v0.5.0
+  Downloaded peeking_take_while v0.1.2
+  Downloaded im v15.0.0
+  Downloaded instant v0.1.9
+  Downloaded generic-array v0.12.3
+  Downloaded hex v0.4.2
+  Downloaded futures-io v0.3.8
+  Downloaded bstr v0.2.14
+  Downloaded lapin v1.2.8
+  Downloaded itoa v0.4.6
+  Downloaded hmac v0.9.0
+  Downloaded getrandom v0.2.0
+  Downloaded graphql-parser v0.3.0
+  Downloaded futures-task v0.3.8
+  Downloaded combine v4.1.0
+  Downloaded pin-project-internal v0.4.27
+  Downloaded libloading v0.6.6
+  Downloaded generic-array v0.14.4
+  Downloaded clang-sys v0.28.1
+  Downloaded backtrace v0.3.55
+  Downloaded openssl-sys v0.9.59
+  Downloaded getrandom v0.1.15
+  Downloaded console v0.12.0
+  Downloaded block-cipher v0.8.0
+  Downloaded sha2 v0.9.2
+  Downloaded h2 v0.2.7
+  Downloaded pin-project v1.0.2
+  Downloaded serde_json v1.0.60
+  Downloaded opaque-debug v0.3.0
+  Downloaded num_cpus v1.13.0
+  Downloaded linked-hash-map v0.5.3
+  Downloaded pinky-swear v4.4.0
+  Downloaded headers v0.3.2
+  Downloaded opaque-debug v0.2.3
+  Downloaded aho-corasick v0.7.15
+  Downloaded amq-protocol-tcp v6.0.0-rc12
+  Downloaded anyhow v1.0.35
+  Downloaded headers-core v0.2.0
+  Downloaded mio v0.7.6
+  Downloaded lock_api v0.4.2
+  Downloaded influx_db_client v0.4.5
+  Downloaded mio-uds v0.6.8
+  Downloaded heck v0.3.1
+  Downloaded http v0.2.1
+  Downloaded structopt-derive v0.4.14
+  Downloaded strum v0.8.0
+  Downloaded postgres-types v0.1.3
+  Downloaded hashbrown v0.9.1
+  Downloaded hashlink v0.6.0
+  Downloaded pest v2.1.3
+  Downloaded hyper-rustls v0.21.0
+  Downloaded httpdate v0.3.2
+  Downloaded httparse v1.3.4
+  Downloaded socket2 v0.3.17
+  Downloaded indexmap v1.6.0
+  Downloaded multipart v0.17.0
+  Downloaded rustc-demangle v0.1.18
+  Downloaded hyper-tls v0.4.3
+  Downloaded http-body v0.3.1
+  Downloaded rustls v0.18.1
+  Downloaded tempfile v3.1.0
+  Downloaded tokio-tungstenite v0.11.0
+  Downloaded ppv-lite86 v0.2.10
+  Downloaded yaml-rust v0.4.4
+  Downloaded inotify-sys v0.1.4
+  Downloaded rustls v0.19.0
+  Downloaded unicode-bidi v0.3.4
+  Downloaded uuid v0.8.1
+  Downloaded humantime v2.0.1
+  Downloaded csv v1.1.5
+  Downloaded prettytable-rs v0.8.0
+  Downloaded pin-utils v0.1.0
+  Downloaded thread_local v1.0.1
+  Downloaded pin-project-lite v0.1.11
+  Downloaded pin-project-lite v0.2.0
+  Downloaded slab v0.4.2
+  Downloaded serde_urlencoded v0.7.0
+  Downloaded libloading v0.5.2
+  Downloaded ucd-trie v0.1.3
+  Downloaded pkg-config v0.3.19
+  Downloaded ipnetwork v0.17.0
+  Downloaded winapi v0.3.9
+  Downloaded rustls-native-certs v0.5.0
+  Downloaded siphasher v0.3.3
+  Downloaded tokio-rustls v0.14.1
+  Downloaded indicatif v0.15.0
+  Downloaded tokio-amqp v0.1.3
+  Downloaded spin v0.5.2
+  Downloaded rand_core v0.5.1
+  Downloaded regex-automata v0.1.9
+  Downloaded sqlformat v0.1.1
+  Downloaded md5 v0.7.0
+  Downloaded unicode-xid v0.1.0
+  Downloaded tracing-core v0.1.17
+  Downloaded rand v0.7.3
+  Downloaded safemem v0.3.3
+  Downloaded subtle v2.3.0
+  Downloaded unicode-xid v0.0.4
+  Downloaded tracing-attributes v0.1.11
+  Downloaded p12 v0.2.0
+  Downloaded inotify v0.8.3
+  Downloaded num-bigint v0.2.6
+  Downloaded phf v0.8.0
+  Downloaded maplit v1.0.2
+  Downloaded log v0.4.11
+  Downloaded hyperlocal v0.7.0
+  Downloaded thiserror v1.0.22
+  Downloaded spinner v0.5.0
+  Downloaded pest_derive v2.1.0
+  Downloaded regex v1.4.2
+  Downloaded version_check v0.9.2
+  Downloaded tinyvec v1.1.0
+  Downloaded tokio-util v0.3.1
+  Downloaded openssl v0.10.31
+  Downloaded matchers v0.0.1
+  Downloaded num-traits v0.2.14
+  Downloaded proc-macro-nested v0.1.6
+  Downloaded new_debug_unreachable v1.0.4
+  Downloaded nom v6.0.0-alpha1
+  Downloaded matches v0.1.8
+  Downloaded memchr v2.3.4
+  Downloaded nom v4.2.3
+  Downloaded webpki v0.21.4
+  Downloaded object v0.22.0
+  Downloaded postgres-protocol v0.5.3
+  Downloaded void v1.0.2
+  Downloaded vcpkg v0.2.11
+  Downloaded openssl-probe v0.1.2
+  Downloaded whoami v0.9.0
+  Downloaded warp v0.2.5
+  Downloaded want v0.3.0
+  Downloaded yasna v0.3.2
+  Downloaded webpki-roots v0.20.0
+  Downloaded gimli v0.23.0
+  Downloaded unzip-n v0.1.2
+  Downloaded libzfs-types v0.1.2
+  Downloaded encoding_rs v0.8.26
+  Downloaded ipnet v2.3.0
+  Downloaded md-5 v0.9.1
+  Downloaded idna v0.2.0
+  Downloaded xml-rs v0.8.3
+  Downloaded libc v0.2.81
+  Downloaded v_hist v0.1.2
+  Downloaded precomputed-hash v0.1.1
+  Downloaded native-tls v0.2.6
+  Downloaded pin-project-internal v1.0.2
+  Downloaded hyper v0.13.9
+  Downloaded once_cell v1.5.2
+  Downloaded tungstenite v0.11.1
+  Downloaded tracing-serde v0.1.2
+  Downloaded lustre_collector v0.2.16
+  Downloaded parking_lot v0.11.1
+  Downloaded quote v1.0.7
+  Downloaded serde_repr v0.1.6
+  Downloaded libsodium-sys v0.2.6
+  Downloaded signal-hook-registry v1.2.2
+  Downloaded pin-project v0.4.27
+  Downloaded stream-cancel v0.6.2
+  Downloaded stream-cancel v0.5.2
+  Downloaded rand_xoshiro v0.4.0
+  Downloaded spinners v1.2.0
+  Downloaded miniz_oxide v0.4.3
+  Downloaded proc-macro2 v1.0.24
+  Downloaded semver-parser v0.10.0
+  Downloaded syn v0.11.11
+  Downloaded string_cache v0.8.1
+  Downloaded sct v0.6.0
+  Downloaded term v0.6.1
+  Downloaded typenum v1.12.0
+  Downloaded serde_yaml v0.8.14
+  Downloaded sized-chunks v0.6.2
+  Downloaded structopt v0.3.21
+  Downloaded thrussh-libsodium v0.2.1
+  Downloaded number_prefix v0.3.0
+  Downloaded mime_guess v2.0.3
+  Downloaded phf_shared v0.8.0
+  Downloaded pest_generator v2.1.3
+  Downloaded itertools v0.9.0
+  Downloaded proc-macro2 v0.4.30
+  Downloaded proc-macro-hack v0.5.19
+  Downloaded num-integer v0.1.44
+  Downloaded pest_meta v2.1.3
+  Downloaded remove_dir_all v0.5.3
+  Downloaded petgraph v0.5.1
+  Downloaded url v2.2.0
+  Downloaded strum_macros v0.8.0
+  Downloaded unicode-normalization v0.1.16
+  Downloaded thrussh v0.29.16
+  Downloaded sha-1 v0.9.2
+  Downloaded tower-service v0.3.0
+  Downloaded stringprep v0.1.2
+  Downloaded input_buffer v0.3.1
+  Downloaded tracing v0.1.22
+  Downloaded strfmt v0.1.6
+  Downloaded tcp-stream v0.20.6
+  Downloaded rustls-connector v0.13.1
+  Downloaded termcolor v1.1.2
+  Downloaded utf-8 v0.7.5
+  Downloaded smallvec v1.5.1
+  Downloaded quote v0.3.15
+  Downloaded tracing-log v0.1.1
+  Downloaded parking_lot_core v0.8.1
+  Downloaded terminal_size v0.1.15
+  Downloaded shlex v0.1.1
+  Downloaded tracing-subscriber v0.2.15
+  Downloaded scoped-tls v1.0.0
+  Downloaded sha-1 v0.8.2
+  Downloaded unreachable v1.0.0
+  Downloaded quote v0.6.13
+  Downloaded static_assertions v1.1.0
+  Downloaded quick-xml v0.18.1
+  Downloaded quick-xml v0.19.0
+  Downloaded serde_derive v1.0.118
+  Downloaded serde_urlencoded v0.6.1
+  Downloaded twoway v0.1.8
+  Downloaded tokio-macros v0.2.6
+  Downloaded rand_chacha v0.2.2
+  Downloaded time v0.1.44
+  Downloaded semver v0.11.0
+  Downloaded untrusted v0.7.1
+  Downloaded ryu v1.0.5
+  Downloaded unicode-width v0.1.8
+  Downloaded syn v1.0.54
+  Downloaded lexical-core v0.7.6
+  Downloaded tokio-tls v0.3.1
+  Downloaded thrussh-keys v0.18.12
+  Downloaded tracing-futures v0.2.4
+  Downloaded serde v1.0.118
+  Downloaded thiserror-impl v1.0.22
+  Downloaded term v0.5.2
+  Downloaded synom v0.11.3
+  Downloaded tokio-postgres v0.5.5
+  Downloaded sharded-slab v0.1.0
+  Downloaded unicode-xid v0.2.1
+  Downloaded reqwest v0.10.9
+  Downloaded tokio v0.2.24
+  Downloaded regex-syntax v0.6.21
+  Downloaded ring v0.16.19
+   Compiling libc v0.2.81
+   Compiling proc-macro2 v1.0.24
+   Compiling unicode-xid v0.2.1
+   Compiling syn v1.0.54
+   Compiling memchr v2.3.4
+   Compiling autocfg v1.0.1
+   Compiling cfg-if v0.1.10
+   Compiling lazy_static v1.4.0
+   Compiling version_check v0.9.2
+   Compiling log v0.4.11
+   Compiling serde_derive v1.0.118
+   Compiling serde v1.0.118
+   Compiling cc v1.0.66
+   Compiling cfg-if v1.0.0
+   Compiling typenum v1.12.0
+   Compiling byteorder v1.3.4
+   Compiling once_cell v1.5.2
+   Compiling bytes v0.5.6
+   Compiling slab v0.4.2
+   Compiling bitflags v1.2.1
+   Compiling futures-core v0.3.8
+   Compiling fnv v1.0.7
+   Compiling proc-macro-nested v0.1.6
+   Compiling proc-macro-hack v0.5.19
+   Compiling itoa v0.4.6
+   Compiling ryu v1.0.5
+   Compiling pin-project-lite v0.1.11
+   Compiling getrandom v0.1.15
+   Compiling futures-sink v0.3.8
+   Compiling ahash v0.4.7
+   Compiling matches v0.1.8
+   Compiling futures-io v0.3.8
+   Compiling pin-utils v0.1.0
+   Compiling tinyvec_macros v0.1.0
+   Compiling serde_json v1.0.60
+   Compiling percent-encoding v2.1.0
+   Compiling pin-project-lite v0.2.0
+   Compiling regex-syntax v0.6.21
+   Compiling ppv-lite86 v0.2.10
+   Compiling opaque-debug v0.3.0
+   Compiling pin-project-internal v0.4.27
+   Compiling spin v0.5.2
+   Compiling untrusted v0.7.1
+   Compiling cpuid-bool v0.1.2
+   Compiling base64 v0.12.3
+   Compiling pkg-config v0.3.19
+   Compiling httparse v1.3.4
+   Compiling base64 v0.13.0
+   Compiling smallvec v1.5.1
+   Compiling getrandom v0.2.0
+   Compiling maybe-uninit v2.0.0
+   Compiling openssl-probe v0.1.2
+   Compiling try-lock v0.2.3
+   Compiling httpdate v0.3.2
+   Compiling tower-service v0.3.0
+   Compiling subtle v2.3.0
+   Compiling mime v0.3.16
+   Compiling foreign-types-shared v0.1.1
+   Compiling openssl v0.10.31
+   Compiling unicode-width v0.1.8
+   Compiling maplit v1.0.2
+   Compiling native-tls v0.2.6
+   Compiling build_const v0.2.1
+   Compiling ucd-trie v0.1.3
+   Compiling scopeguard v1.1.0
+   Compiling static_assertions v1.1.0
+   Compiling ansi_term v0.12.1
+   Compiling encoding_rs v0.8.26
+   Compiling unicode-segmentation v1.7.1
+   Compiling linked-hash-map v0.5.3
+   Compiling ipnet v2.3.0
+   Compiling autocfg v0.1.7
+   Compiling hex v0.4.2
+   Compiling rand_core v0.4.2
+   Compiling void v1.0.2
+   Compiling whoami v0.9.0
+   Compiling strsim v0.8.0
+   Compiling ascii v0.9.3
+   Compiling ansi_term v0.11.0
+   Compiling vec_map v0.8.2
+   Compiling remove_dir_all v0.5.3
+   Compiling dotenv v0.15.0
+   Compiling iml-change v0.1.0 (/root/integrated-manager-for-lustre/iml-change)
+   Compiling humantime v2.0.1
+   Compiling dtoa v0.4.6
+   Compiling byte-tools v0.3.1
+   Compiling fake-simd v0.1.2
+   Compiling safemem v0.3.3
+   Compiling opaque-debug v0.2.3
+   Compiling utf-8 v0.7.5
+   Compiling quick-error v1.2.3
+   Compiling urlencoding v1.1.1
+   Compiling scoped-tls v1.0.0
+   Compiling bit-vec v0.6.3
+   Compiling lexical-core v0.7.6
+   Compiling block-padding v0.2.1
+   Compiling arrayvec v0.5.2
+   Compiling doc-comment v0.3.3
+   Compiling siphasher v0.3.3
+   Compiling cookie-factory v0.3.1
+   Compiling amq-protocol v6.0.0-rc12
+   Compiling lapin v1.2.8
+   Compiling async-task v4.0.3
+   Compiling md5 v0.7.0
+   Compiling fallible-iterator v0.2.0
+   Compiling glob v0.3.0
+   Compiling adler v0.2.3
+   Compiling gimli v0.23.0
+   Compiling version_check v0.1.5
+   Compiling object v0.22.0
+   Compiling proc-macro2 v0.4.30
+   Compiling rustc-demangle v0.1.18
+   Compiling unicode-xid v0.1.0
+   Compiling termcolor v1.1.2
+   Compiling bindgen v0.49.4
+   Compiling peeking_take_while v0.1.2
+   Compiling shlex v0.1.1
+   Compiling unicode-xid v0.0.4
+   Compiling encode_unicode v0.3.6
+   Compiling quote v0.3.15
+   Compiling winapi v0.3.9
+   Compiling ansi_term v0.7.5
+   Compiling anyhow v1.0.35
+   Compiling precomputed-hash v0.1.1
+   Compiling crc32fast v1.2.1
+   Compiling new_debug_unreachable v1.0.4
+   Compiling number_prefix v0.3.0
+   Compiling xml-rs v0.8.3
+   Compiling strum v0.8.0
+   Compiling dyn-clone v1.0.3
+   Compiling strfmt v0.1.6
+   Compiling version-utils v0.2.0 (/root/integrated-manager-for-lustre/version-utils)
+   Compiling number-formatter v0.2.0 (/root/integrated-manager-for-lustre/number-formatter)
+   Compiling data-encoding v2.3.1
+   Compiling exitcode v1.1.2
+   Compiling fixedbitset v0.2.0
+   Compiling tracing-core v0.1.17
+   Compiling thread_local v1.0.1
+   Compiling sharded-slab v0.1.0
+   Compiling indexmap v1.6.0
+   Compiling num-traits v0.2.14
+   Compiling num-integer v0.1.44
+   Compiling crossbeam-utils v0.7.2
+   Compiling num-bigint v0.2.6
+   Compiling miniz_oxide v0.4.3
+   Compiling generic-array v0.14.4
+   Compiling unicase v2.6.0
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling proc-macro-error v1.0.4
+   Compiling im v15.0.0
+   Compiling nom v6.0.0-alpha1
+   Compiling instant v0.1.9
+   Compiling libloading v0.6.6
+   Compiling futures-task v0.3.8
+   Compiling input_buffer v0.3.1
+   Compiling http v0.2.1
+   Compiling futures-channel v0.3.8
+   Compiling unicode-bidi v0.3.4
+   Compiling hashbrown v0.9.1
+   Compiling tinyvec v1.1.0
+   Compiling form_urlencoded v1.0.0
+   Compiling ring v0.16.19
+   Compiling libloading v0.5.2
+   Compiling openssl-sys v0.9.59
+   Compiling libsodium-sys v0.2.6
+   Compiling foreign-types v0.3.2
+   Compiling textwrap v0.11.0
+   Compiling lock_api v0.4.2
+   Compiling crc v1.8.1
+   Compiling pest v2.1.3
+   Compiling heck v0.3.1
+   Compiling yaml-rust v0.4.4
+   Compiling rand_chacha v0.1.1
+   Compiling rand_pcg v0.1.2
+   Compiling rand v0.6.5
+   Compiling unreachable v1.0.0
+   Compiling rand_core v0.3.1
+   Compiling rand_jitter v0.1.4
+   Compiling block-padding v0.1.5
+   Compiling phf_shared v0.8.0
+   Compiling clang-sys v0.28.1
+   Compiling nom v4.2.3
+   Compiling humantime v1.3.0
+   Compiling synom v0.11.3
+   Compiling addr2line v0.14.0
+   Compiling hashlink v0.6.0
+   Compiling unicode-normalization v0.1.16
+   Compiling http-body v0.3.1
+   Compiling headers-core v0.2.0
+   Compiling pest_meta v2.1.3
+   Compiling rand_xorshift v0.1.1
+   Compiling rand_hc v0.1.0
+   Compiling rand_isaac v0.1.1
+   Compiling phf v0.8.0
+   Compiling syn v0.11.11
+   Compiling aho-corasick v0.7.15
+   Compiling twoway v0.1.8
+   Compiling buf_redux v0.8.4
+   Compiling combine v4.1.0
+   Compiling csv-core v0.1.10
+   Compiling quote v1.0.7
+   Compiling net2 v0.2.37
+   Compiling iovec v0.1.4
+   Compiling num_cpus v1.13.0
+   Compiling signal-hook-registry v1.2.2
+   Compiling time v0.1.44
+   Compiling socket2 v0.3.17
+   Compiling parking_lot_core v0.8.1
+   Compiling atty v0.2.14
+   Compiling rand_os v0.1.3
+   Compiling termios v0.3.3
+   Compiling terminal_size v0.1.15
+   Compiling dirs-sys v0.3.5
+   Compiling dirs v1.0.5
+   Compiling errno v0.2.7
+   Compiling clicolors-control v1.0.1
+   Compiling inotify-sys v0.1.4
+   Compiling want v0.3.0
+   Compiling tracing-log v0.1.1
+   Compiling mio v0.7.6
+   Compiling regex-automata v0.1.9
+   Compiling fxhash v0.2.1
+   Compiling bitmaps v2.1.0
+   Compiling generic-array v0.12.3
+   Compiling idna v0.2.0
+   Compiling stringprep v0.1.2
+   Compiling cryptovec v0.6.0
+   Compiling quote v0.6.13
+   Compiling regex v1.4.2
+   Compiling strum_macros v0.8.0
+   Compiling mio v0.6.23
+   Compiling rand_core v0.5.1
+   Compiling dns-lookup v1.0.5
+   Compiling ahash v0.5.10
+   Compiling parking_lot v0.11.1
+   Compiling clap v2.33.3
+   Compiling dirs v2.0.2
+   Compiling dirs v3.0.1
+   Compiling term v0.5.2
+   Compiling atoi v0.3.3
+   Compiling backtrace v0.3.55
+   Compiling flate2 v1.0.19
+   Compiling mime_guess v2.0.3
+   Compiling crossbeam-channel v0.4.4
+   Compiling crossbeam-queue v0.2.3
+   Compiling matchers v0.0.1
+   Compiling digest v0.9.0
+   Compiling block-buffer v0.9.0
+   Compiling crypto-mac v0.9.1
+   Compiling block-cipher v0.8.0
+   Compiling block-buffer v0.7.3
+   Compiling digest v0.8.1
+   Compiling url v2.2.0
+   Compiling cexpr v0.3.6
+   Compiling sized-chunks v0.6.2
+   Compiling sqlformat v0.1.1
+   Compiling iml-api-utils v0.4.0 (/root/integrated-manager-for-lustre/iml-api-utils)
+   Compiling console v0.11.3
+   Compiling console v0.9.2
+   Compiling console v0.13.0
+   Compiling byte-unit v2.1.0
+   Compiling console v0.12.0
+   Compiling mio-uds v0.6.8
+   Compiling env_logger v0.6.2
+   Compiling rand_chacha v0.2.2
+   Compiling rand_xoshiro v0.4.0
+   Compiling webpki v0.21.4
+   Compiling sct v0.6.0
+   Compiling term v0.6.1
+   Compiling pest_generator v2.1.3
+   Compiling derive_utils v0.11.0
+   Compiling failure v0.1.8
+   Compiling tokio-macros v0.2.6
+   Compiling pin-project-internal v1.0.2
+   Compiling futures-macro v0.3.8
+   Compiling tracing-attributes v0.1.11
+   Compiling thiserror-impl v1.0.22
+   Compiling async-trait v0.1.42
+   Compiling serde_repr v0.1.6
+   Compiling unzip-n v0.1.2
+   Compiling hmac v0.9.0
+   Compiling sha-1 v0.9.2
+   Compiling sha2 v0.9.2
+   Compiling md-5 v0.9.1
+   Compiling des v0.5.0
+   Compiling block-modes v0.6.1
+   Compiling rc2 v0.5.0
+   Compiling sha-1 v0.8.2
+   Compiling iml-manager-env v0.4.0 (/root/integrated-manager-for-lustre/iml-manager-env)
+   Compiling amq-protocol-uri v6.0.0-rc12
+   Compiling v_hist v0.1.2
+   Compiling indicatif v0.15.0
+   Compiling rand v0.7.3
+   Compiling webpki-roots v0.20.0
+   Compiling rustls v0.18.1
+   Compiling spinner v0.5.0
+   Compiling structopt-derive v0.4.14
+   Compiling juniper_codegen v0.15.0 (https://github.com/graphql-rust/juniper#6326acde)
+   Compiling futures-enum v0.1.15
+   Compiling rustls v0.19.0
+   Compiling pest_derive v2.1.0
+   Compiling which v2.0.1
+   Compiling yasna v0.3.2
+   Compiling tokio v0.2.24
+   Compiling pin-project v1.0.2
+   Compiling tracing v0.1.22
+   Compiling thiserror v1.0.22
+   Compiling pin-project v0.4.27
+   Compiling headers v0.3.2
+   Compiling spinners v1.2.0
+   Compiling uuid v0.8.1
+   Compiling tempfile v3.1.0
+   Compiling tungstenite v0.11.1
+   Compiling postgres-protocol v0.5.3
+   Compiling structopt v0.3.21
+   Compiling thrussh-libsodium v0.2.1
+   Compiling p12 v0.2.0
+   Compiling rustls-native-certs v0.5.0
+   Compiling semver-parser v0.10.0
+   Compiling futures-util v0.3.8
+   Compiling pinky-swear v4.4.0
+   Compiling tracing-futures v0.2.4
+   Compiling tokio-util v0.3.1
+   Compiling tokio-rustls v0.14.1
+   Compiling tokio-tls v0.3.1
+   Compiling deadpool v0.5.2
+   Compiling inotify v0.8.3
+   Compiling multipart v0.17.0
+   Compiling dialoguer v0.6.2
+   Compiling postgres-types v0.1.3
+   Compiling rustls-connector v0.13.1
+   Compiling chrono v0.4.19
+   Compiling tracing-serde v0.1.2
+   Compiling either v1.6.1
+   Compiling serde_urlencoded v0.7.0
+   Compiling quick-xml v0.19.0
+   Compiling ipnetwork v0.17.0
+   Compiling serde_urlencoded v0.6.1
+   Compiling serde_yaml v0.8.14
+   Compiling bstr v0.2.14
+   Compiling libzfs-types v0.1.2
+   Compiling string_cache v0.8.1
+   Compiling quick-xml v0.18.1
+   Compiling semver v0.11.0
+   Compiling sqlx-rt v0.2.0 (https://github.com/jgrund/sqlx?branch=workspace-support#83d3f8c5)
+   Compiling futures-executor v0.3.8
+   Compiling tokio-tungstenite v0.11.0
+   Compiling stream-cancel v0.5.2
+   Compiling stream-cancel v0.6.2
+   Compiling liblustreapi-types v0.4.0 (/root/integrated-manager-for-lustre/liblustreapi-types)
+   Compiling tcp-stream v0.20.6
+   Compiling h2 v0.2.7
+   Compiling petgraph v0.5.1
+   Compiling combine v3.8.1
+   Compiling itertools v0.9.0
+   Compiling chrono-humanize v0.0.11
+   Compiling elementtree v0.5.0
+   Compiling device-types v0.3.0
+   Compiling csv v1.1.5
+   Compiling futures v0.3.8
+   Compiling amq-protocol-tcp v6.0.0-rc12
+   Compiling tracing-subscriber v0.2.15
+   Compiling sqlx-core v0.4.0 (https://github.com/jgrund/sqlx?branch=workspace-support#83d3f8c5)
+   Compiling bson v1.1.0
+   Compiling amq-protocol-types v6.0.0-rc12
+   Compiling lustre_collector v0.2.16
+   Compiling hostlist-parser v0.1.3
+   Compiling tokio-postgres v0.5.5
+   Compiling iml-request-retry v0.4.0 (/root/integrated-manager-for-lustre/iml-request-retry)
+   Compiling iml-fs v0.4.0 (/root/integrated-manager-for-lustre/iml-fs)
+   Compiling tokio-runtime-shutdown v0.4.0 (/root/integrated-manager-for-lustre/tokio-runtime-shutdown)
+   Compiling thrussh-keys v0.18.12
+   Compiling prettytable-rs v0.8.0
+   Compiling cargo_metadata v0.12.1
+   Compiling hyper v0.13.9
+   Compiling iml-tracing v0.3.0 (/root/integrated-manager-for-lustre/iml-tracing)
+   Compiling graphql-parser v0.3.0
+   Compiling thrussh v0.29.16
+   Compiling liblustreapi v0.4.0 (/root/integrated-manager-for-lustre/liblustreapi)
+   Compiling juniper v0.15.0 (https://github.com/graphql-rust/juniper#6326acde)
+   Compiling hyper-rustls v0.21.0
+   Compiling hyper-tls v0.4.3
+   Compiling warp v0.2.5
+   Compiling hyperlocal v0.7.0
+   Compiling iml-ssh v0.1.0 (/root/integrated-manager-for-lustre/iml-ssh)
+   Compiling deadpool-lapin v0.6.0
+   Compiling tokio-amqp v0.1.3
+   Compiling sqlx-macros v0.4.0 (https://github.com/jgrund/sqlx?branch=workspace-support#83d3f8c5)
+   Compiling reqwest v0.10.9
+   Compiling iml-cmd v0.4.0 (/root/integrated-manager-for-lustre/iml-cmd)
+   Compiling iml-report v0.1.0 (/root/integrated-manager-for-lustre/iml-report)
+   Compiling iml-timer v0.4.0 (/root/integrated-manager-for-lustre/iml-timer)
+   Compiling wbem-client v0.2.0 (/root/integrated-manager-for-lustre/wbem-client)
+   Compiling influx_db_client v0.4.5
+   Compiling iml-manager-client v0.4.0 (/root/integrated-manager-for-lustre/iml-manager-client)
+   Compiling sqlx v0.4.1 (https://github.com/jgrund/sqlx?branch=workspace-support#83d3f8c5)
+   Compiling iml-influx v0.2.0 (/root/integrated-manager-for-lustre/iml-influx)
+   Compiling iml-wire-types v0.4.0 (/root/integrated-manager-for-lustre/iml-wire-types)
+warning: derive helper attribute is used before it is introduced
+    --> iml-wire-types/src/lib.rs:2034:3
+     |
+2034 | #[serde(rename_all = "lowercase")]
+     |   ^^^^^
+2035 | #[derive(PartialEq, Eq, Clone, Debug, serde::Serialize, serde::Deserialize, Ord, PartialOrd)]
+     |                                       ---------------- the attribute is introduced here
+     |
+     = note: `#[warn(legacy_derive_helpers)]` on by default
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #79202 <https://github.com/rust-lang/rust/issues/79202>
+
+warning: field is never read: `state_modified_at`
+   --> iml-wire-types/src/db.rs:119:5
+    |
+119 |     state_modified_at: String,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `state`
+   --> iml-wire-types/src/db.rs:120:5
+    |
+120 |     state: String,
+    |     ^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `immutable_state`
+   --> iml-wire-types/src/db.rs:121:5
+    |
+121 |     immutable_state: bool,
+    |     ^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `name`
+   --> iml-wire-types/src/db.rs:122:5
+    |
+122 |     name: String,
+    |     ^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `mgs_id`
+   --> iml-wire-types/src/db.rs:123:5
+    |
+123 |     mgs_id: i32,
+    |     ^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `mdt_next_index`
+   --> iml-wire-types/src/db.rs:124:5
+    |
+124 |     mdt_next_index: i32,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `ost_next_index`
+   --> iml-wire-types/src/db.rs:125:5
+    |
+125 |     ost_next_index: i32,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `content_type_id`
+   --> iml-wire-types/src/db.rs:127:5
+    |
+127 |     content_type_id: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `index`
+   --> iml-wire-types/src/db.rs:456:5
+    |
+456 |     index: i32,
+    |     ^^^^^^^^^^
+    |
+note: `ManagedOstRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:453:30
+    |
+453 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `filesystem_id`
+   --> iml-wire-types/src/db.rs:457:5
+    |
+457 |     filesystem_id: i32,
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+note: `ManagedOstRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:453:30
+    |
+453 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `index`
+   --> iml-wire-types/src/db.rs:484:5
+    |
+484 |     index: i32,
+    |     ^^^^^^^^^^
+    |
+note: `ManagedMdtRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:481:30
+    |
+481 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `filesystem_id`
+   --> iml-wire-types/src/db.rs:485:5
+    |
+485 |     filesystem_id: i32,
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+note: `ManagedMdtRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:481:30
+    |
+481 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `alert_item_type_id`
+   --> iml-wire-types/src/db.rs:559:5
+    |
+559 |     alert_item_type_id: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `alert_item_id`
+   --> iml-wire-types/src/db.rs:560:5
+    |
+560 |     alert_item_id: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `alert_type`
+   --> iml-wire-types/src/db.rs:561:5
+    |
+561 |     alert_type: String,
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `begin`
+   --> iml-wire-types/src/db.rs:562:5
+    |
+562 |     begin: String,
+    |     ^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `end`
+   --> iml-wire-types/src/db.rs:563:5
+    |
+563 |     end: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `dismissed`
+   --> iml-wire-types/src/db.rs:565:5
+    |
+565 |     dismissed: bool,
+    |     ^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `severity`
+   --> iml-wire-types/src/db.rs:566:5
+    |
+566 |     severity: i32,
+    |     ^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `record_type`
+   --> iml-wire-types/src/db.rs:567:5
+    |
+567 |     record_type: String,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `variant`
+   --> iml-wire-types/src/db.rs:568:5
+    |
+568 |     variant: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `lustre_pid`
+   --> iml-wire-types/src/db.rs:569:5
+    |
+569 |     lustre_pid: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `message`
+   --> iml-wire-types/src/db.rs:570:5
+    |
+570 |     message: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+   Compiling iml-rabbit v0.4.0 (/root/integrated-manager-for-lustre/iml-rabbit)
+   Compiling iml-postgres v0.4.0 (/root/integrated-manager-for-lustre/iml-postgres)
+   Compiling iml-graphql-queries v0.2.0 (/root/integrated-manager-for-lustre/iml-graphql-queries)
+   Compiling iml-util v0.4.0 (/root/integrated-manager-for-lustre/iml-util)
+   Compiling iml-command-utils v0.4.0 (/root/integrated-manager-for-lustre/iml-command-utils)
+   Compiling iml-systemd v0.4.0 (/root/integrated-manager-for-lustre/iml-systemd)
+warning: field is never read: `line`
+  --> iml-graphql-queries/src/lib.rs:31:5
+   |
+31 |     line: u32,
+   |     ^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+note: `Location` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> iml-graphql-queries/src/lib.rs:29:10
+   |
+29 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `column`
+  --> iml-graphql-queries/src/lib.rs:32:5
+   |
+32 |     column: u32,
+   |     ^^^^^^^^^^^
+   |
+note: `Location` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> iml-graphql-queries/src/lib.rs:29:10
+   |
+29 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `locations`
+  --> iml-graphql-queries/src/lib.rs:38:5
+   |
+38 |     locations: Vec<Location>,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+note: `Error` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> iml-graphql-queries/src/lib.rs:35:10
+   |
+35 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `path`
+  --> iml-graphql-queries/src/lib.rs:39:5
+   |
+39 |     path: Vec<String>,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+note: `Error` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> iml-graphql-queries/src/lib.rs:35:10
+   |
+35 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `task_id`
+  --> iml-graphql-queries/src/task.rs:54:9
+   |
+54 |         task_id: i32,
+   |         ^^^^^^^^^^^^
+   |
+note: `TaskCommand` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> iml-graphql-queries/src/task.rs:52:14
+   |
+52 |     #[derive(Debug, Clone, serde::Deserialize)]
+   |              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `command`
+  --> iml-graphql-queries/src/task.rs:55:9
+   |
+55 |         command: Command,
+   |         ^^^^^^^^^^^^^^^^
+   |
+note: `TaskCommand` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> iml-graphql-queries/src/task.rs:52:14
+   |
+52 |     #[derive(Debug, Clone, serde::Deserialize)]
+   |              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `remove`
+   --> iml-graphql-queries/src/task.rs:104:9
+    |
+104 |         remove: Command,
+    |         ^^^^^^^^^^^^^^^
+    |
+note: `Remove` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   --> iml-graphql-queries/src/task.rs:102:14
+    |
+102 |     #[derive(Debug, Clone, serde::Deserialize)]
+    |              ^^^^^  ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+   Compiling iml-action-client v0.1.0 (/root/integrated-manager-for-lustre/iml-action-client)
+   Compiling iml-service-queue v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-service-queue)
+   Compiling iml-job-scheduler-rpc v0.4.0 (/root/integrated-manager-for-lustre/iml-job-scheduler-rpc)
+warning: `iml-graphql-queries` (lib) generated 7 warnings
+   Compiling iml-agent-comms v0.4.0 (/root/integrated-manager-for-lustre/iml-agent-comms)
+   Compiling iml-manager-cli v0.4.0 (/root/integrated-manager-for-lustre/iml-manager-cli)
+   Compiling iml-system-test-utils v0.4.0 (/root/integrated-manager-for-lustre/iml-system-test-utils)
+   Compiling iml-agent v0.4.0 (/root/integrated-manager-for-lustre/iml-agent)
+   Compiling iml-stats v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-stats)
+   Compiling iml-mailbox v0.4.0 (/root/integrated-manager-for-lustre/iml-mailbox)
+   Compiling iml-snapshot v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-snapshot)
+   Compiling iml-device v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-device)
+warning: field is never read: `cluster_name`
+  --> iml-agent/src/action_plugins/high_availability/corosync_conf.rs:93:5
+   |
+93 |     cluster_name: String,
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+note: `Totem` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  --> iml-agent/src/action_plugins/high_availability/corosync_conf.rs:90:10
+   |
+90 | #[derive(Debug)]
+   |          ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `token`
+  --> iml-agent/src/action_plugins/high_availability/corosync_conf.rs:94:5
+   |
+94 |     token: u32,
+   |     ^^^^^^^^^^
+   |
+note: `Totem` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  --> iml-agent/src/action_plugins/high_availability/corosync_conf.rs:90:10
+   |
+90 | #[derive(Debug)]
+   |          ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+   Compiling iml-journal v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-journal)
+   Compiling iml-sfa v0.2.0 (/root/integrated-manager-for-lustre/iml-sfa)
+   Compiling iml-corosync v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-corosync)
+   Compiling iml-warp-drive v0.4.0 (/root/integrated-manager-for-lustre/iml-warp-drive)
+   Compiling iml-ostpool v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-ostpool)
+   Compiling iml-action-runner v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-action-runner)
+warning: `iml-wire-types` (lib) generated 24 warnings
+   Compiling iml-ntp v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-ntp)
+   Compiling iml-task-runner v0.1.0 (/root/integrated-manager-for-lustre/iml-task-runner)
+   Compiling iml-api v0.4.0 (/root/integrated-manager-for-lustre/iml-api)
+warning: `iml-agent` (lib) generated 2 warnings
+   Compiling iml-network v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-network)
+   Compiling iml-postoffice v0.4.0 (/root/integrated-manager-for-lustre/iml-services/iml-postoffice)
+    Finished release [optimized] target(s) in 18m 18s
+cp target/release/iml-{action-runner,agent,agent-comms,agent-daemon,api,corosync,device,journal,mailbox,network,ntp,ostpool,postoffice,report,sfa,snapshot,stats,task-runner,warp-drive,timer} \
+	iml-action-runner.service \
+	iml-action-runner.socket \
+	iml-agent-comms.service \
+	iml-agent/systemd-units/* \
+	iml-api.service \
+	iml-device.service \
+	iml-journal.service \
+	iml-mailbox.service \
+	iml-network.service \
+	iml-ntp.service \
+	iml-ostpool.service \
+	iml-postoffice.service \
+	iml-report.conf \
+	iml-report.service \
+	iml-rust-corosync.service \
+	iml-rust-stats.service \
+	iml-sfa.service \
+	iml-snapshot.service \
+	iml-task-runner.service \
+	iml-timer.service \
+	iml-warp-drive/systemd-units/* \
+	/tmp/tmp.F7z5fzYZRY/release/rust-iml
+cp target/release/iml /tmp/tmp.F7z5fzYZRY/release/rust-iml
+cp target/release/iml-config /tmp/tmp.F7z5fzYZRY/release/rust-iml
+tar -czvf /tmp/tmp.F7z5fzYZRY/_topdir/SOURCES/rust-iml.tar.gz -C /tmp/tmp.F7z5fzYZRY/release/rust-iml .
+./
+./iml-action-runner
+./iml-agent
+./iml-agent-comms
+./iml-agent-daemon
+./iml-api
+./iml-corosync
+./iml-device
+./iml-journal
+./iml-mailbox
+./iml-network
+./iml-ntp
+./iml-ostpool
+./iml-postoffice
+./iml-report
+./iml-sfa
+./iml-snapshot
+./iml-stats
+./iml-task-runner
+./iml-warp-drive
+./iml-timer
+./iml-action-runner.service
+./iml-action-runner.socket
+./iml-agent-comms.service
+./00-rust-iml-agent.preset
+./rust-iml-agent.path
+./rust-iml-agent.service
+./settings.conf
+./tmpfiles.conf
+./iml-api.service
+./iml-device.service
+./iml-journal.service
+./iml-mailbox.service
+./iml-network.service
+./iml-ntp.service
+./iml-ostpool.service
+./iml-postoffice.service
+./iml-report.conf
+./iml-report.service
+./iml-rust-corosync.service
+./iml-rust-stats.service
+./iml-sfa.service
+./iml-snapshot.service
+./iml-task-runner.service
+./iml-timer.service
+./iml-warp-drive.service
+./iml
+./iml-config
+cp rust-iml.spec /tmp/tmp.F7z5fzYZRY/_topdir/SPECS/
+rpmbuild -bs -D "_topdir /tmp/tmp.F7z5fzYZRY/_topdir" /tmp/tmp.F7z5fzYZRY/_topdir/SPECS/rust-iml.spec
+Wrote: /tmp/tmp.F7z5fzYZRY/_topdir/SRPMS/rust-iml-0.5.0-1.el7.src.rpm
+cp -rf /tmp/tmp.F7z5fzYZRY/_topdir ./
+cp -f /tmp/tmp.F7z5fzYZRY/_topdir/SRPMS/*.rpm .
+make[1]: Leaving directory `/root/integrated-manager-for-lustre'
+rpmbuild --rebuild -D "_topdir /root/integrated-manager-for-lustre/_topdir" _topdir/SRPMS/rust-iml-*.src.rpm
+Installing _topdir/SRPMS/rust-iml-0.5.0-1.el7.src.rpm
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.bMzHuQ
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ rm -rf rust-iml-0.5.0
++ /usr/bin/mkdir -p rust-iml-0.5.0
++ cd rust-iml-0.5.0
++ /usr/bin/gzip -dc /root/integrated-manager-for-lustre/_topdir/SOURCES/rust-iml.tar.gz
++ /usr/bin/tar -xvvf -
+drwxr-xr-x root/root         0 2022-05-12 01:20 ./
+-rwxr-xr-x root/root  17832256 2022-05-12 01:20 ./iml-action-runner
+-rwxr-xr-x root/root  16606704 2022-05-12 01:20 ./iml-agent
+-rwxr-xr-x root/root  15720256 2022-05-12 01:20 ./iml-agent-comms
+-rwxr-xr-x root/root  19956096 2022-05-12 01:20 ./iml-agent-daemon
+-rwxr-xr-x root/root  24064192 2022-05-12 01:20 ./iml-api
+-rwxr-xr-x root/root  15049400 2022-05-12 01:20 ./iml-corosync
+-rwxr-xr-x root/root  18329992 2022-05-12 01:20 ./iml-device
+-rwxr-xr-x root/root  15226152 2022-05-12 01:20 ./iml-journal
+-rwxr-xr-x root/root  13438520 2022-05-12 01:20 ./iml-mailbox
+-rwxr-xr-x root/root  18541032 2022-05-12 01:20 ./iml-network
+-rwxr-xr-x root/root  14779952 2022-05-12 01:20 ./iml-ntp
+-rwxr-xr-x root/root  13920152 2022-05-12 01:20 ./iml-ostpool
+-rwxr-xr-x root/root  12702768 2022-05-12 01:20 ./iml-postoffice
+-rwxr-xr-x root/root   9066096 2022-05-12 01:20 ./iml-report
+-rwxr-xr-x root/root  15549040 2022-05-12 01:20 ./iml-sfa
+-rwxr-xr-x root/root  19338232 2022-05-12 01:20 ./iml-snapshot
+-rwxr-xr-x root/root  17272080 2022-05-12 01:20 ./iml-stats
+-rwxr-xr-x root/root  15028056 2022-05-12 01:20 ./iml-task-runner
+-rwxr-xr-x root/root  23396440 2022-05-12 01:20 ./iml-warp-drive
+-rwxr-xr-x root/root   9349432 2022-05-12 01:20 ./iml-timer
+-rw-r--r-- root/root       546 2022-05-12 01:20 ./iml-action-runner.service
+-rw-r--r-- root/root       177 2022-05-12 01:20 ./iml-action-runner.socket
+-rw-r--r-- root/root       453 2022-05-12 01:20 ./iml-agent-comms.service
+-rw-r--r-- root/root        24 2022-05-12 01:20 ./00-rust-iml-agent.preset
+-rw-r--r-- root/root       173 2022-05-12 01:20 ./rust-iml-agent.path
+-rw-r--r-- root/root       424 2022-05-12 01:20 ./rust-iml-agent.service
+-rw-r--r-- root/root       684 2022-05-12 01:20 ./settings.conf
+-rw-r--r-- root/root        91 2022-05-12 01:20 ./tmpfiles.conf
+-rw-r--r-- root/root       428 2022-05-12 01:20 ./iml-api.service
+-rw-r--r-- root/root       517 2022-05-12 01:20 ./iml-device.service
+-rw-r--r-- root/root       464 2022-05-12 01:20 ./iml-journal.service
+-rw-r--r-- root/root       436 2022-05-12 01:20 ./iml-mailbox.service
+-rw-r--r-- root/root       466 2022-05-12 01:20 ./iml-network.service
+-rw-r--r-- root/root       457 2022-05-12 01:20 ./iml-ntp.service
+-rw-r--r-- root/root       437 2022-05-12 01:20 ./iml-ostpool.service
+-rw-r--r-- root/root       425 2022-05-12 01:20 ./iml-postoffice.service
+-rw-r--r-- root/root        67 2022-05-12 01:20 ./iml-report.conf
+-rw-r--r-- root/root       388 2022-05-12 01:20 ./iml-report.service
+-rw-r--r-- root/root       493 2022-05-12 01:20 ./iml-rust-corosync.service
+-rw-r--r-- root/root       421 2022-05-12 01:20 ./iml-rust-stats.service
+-rw-r--r-- root/root       414 2022-05-12 01:20 ./iml-sfa.service
+-rw-r--r-- root/root       438 2022-05-12 01:20 ./iml-snapshot.service
+-rw-r--r-- root/root       414 2022-05-12 01:20 ./iml-task-runner.service
+-rw-r--r-- root/root       385 2022-05-12 01:20 ./iml-timer.service
+-rw-r--r-- root/root       441 2022-05-12 01:20 ./iml-warp-drive.service
+-rwxr-xr-x root/root  18605408 2022-05-12 01:20 ./iml
+-rwxr-xr-x root/root   8471144 2022-05-12 01:20 ./iml-config
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.nOaqL0
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ cd rust-iml-0.5.0
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.Wm682a
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ '[' /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64 '!=' / ']'
++ rm -rf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64
+++ dirname /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT
++ mkdir /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64
++ cd rust-iml-0.5.0
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-action-runner /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-agent /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-agent-comms /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-agent-daemon /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-api /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-config /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-corosync /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-device /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-journal /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-mailbox /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-network /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-ntp /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-ostpool /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-postoffice /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-report /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-sfa /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-snapshot /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-stats /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-task-runner /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-warp-drive /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ cp iml-timer /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-action-runner.socket iml-action-runner.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-agent-comms.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-api.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-rust-corosync.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-device.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-journal.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-mailbox.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-network.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-ntp.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-ostpool.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-postoffice.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-report.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-rust-stats.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-sfa.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-snapshot.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-task-runner.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-warp-drive.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp iml-timer.service /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ cp rust-iml-agent.service rust-iml-agent.path /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/tmpfiles.d
++ cp iml-report.conf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/tmpfiles.d
++ cp tmpfiles.conf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/tmpfiles.d/iml-agent.conf
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system-preset
++ cp 00-rust-iml-agent.preset /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/lib/systemd/system-preset
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/etc/iml/
++ cp settings.conf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/etc/iml/iml-agent.conf
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/etc/bash_completion.d
++ /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml shell-completion bash -e iml -o /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/etc/bash_completion.d/iml
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/share/zsh/site-functions
++ /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml shell-completion zsh -e iml -o /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/share/zsh/site-functions/_iml
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /root/integrated-manager-for-lustre/_topdir/BUILD/rust-iml-0.5.0
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-action-runner
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-agent
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-agent-comms
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-agent-daemon
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-api
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-config
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-corosync
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-device
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-journal
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-mailbox
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-network
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-ntp
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-ostpool
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-postoffice
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-report
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-sfa
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-snapshot
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-stats
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-task-runner
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-warp-drive
+extracting debug info from /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64/usr/bin/iml-timer
+/usr/lib/rpm/sepdebugcrcfix: Updated 22 CRC32s, 0 CRC32s did match.
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-compress
++ /usr/lib/rpm/redhat/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: rust-iml-debuginfo-0.5.0-1.el7.x86_64
+Provides: rust-iml-debuginfo = 0.5.0-1.el7 rust-iml-debuginfo(x86-64) = 0.5.0-1.el7
+Requires(rpmlib): rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1 rpmlib(CompressedFileNames) <= 3.0.4-1
+Processing files: rust-iml-cli-0.5.0-1.el7.x86_64
+Provides: rust-iml-cli = 0.5.0-1.el7 rust-iml-cli(x86-64) = 0.5.0-1.el7
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-cli-bash-completion-0.5.0-1.el7.x86_64
+Provides: rust-iml-cli-bash-completion = 0.5.0-1.el7 rust-iml-cli-bash-completion(x86-64) = 0.5.0-1.el7
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: rust-iml-cli-zsh-completion-0.5.0-1.el7.x86_64
+Provides: rust-iml-cli-zsh-completion = 0.5.0-1.el7 rust-iml-cli-zsh-completion(x86-64) = 0.5.0-1.el7
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: rust-iml-config-cli-0.5.0-1.el7.x86_64
+Provides: rust-iml-config-cli = 0.5.0-1.el7 rust-iml-config-cli(x86-64) = 0.5.0-1.el7
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libcrypto.so.10()(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) libssl.so.10()(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-agent-0.5.0-1.el7.x86_64
+Provides: rust-iml-agent = 0.5.0-1.el7 rust-iml-agent(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Obsoletes: iml-device-scanner-proxy
+Processing files: rust-iml-agent-comms-0.5.0-1.el7.x86_64
+Provides: rust-iml-agent-comms = 0.5.0-1.el7 rust-iml-agent-comms(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-api-0.5.0-1.el7.x86_64
+Provides: rust-iml-api = 0.5.0-1.el7 rust-iml-api(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-action-runner-0.5.0-1.el7.x86_64
+Provides: rust-iml-action-runner = 0.5.0-1.el7 rust-iml-action-runner(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-ostpool-0.5.0-1.el7.x86_64
+Provides: rust-iml-ostpool = 0.5.0-1.el7 rust-iml-ostpool(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-task-runner-0.5.0-1.el7.x86_64
+Provides: rust-iml-task-runner = 0.5.0-1.el7 rust-iml-task-runner(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-stats-0.5.0-1.el7.x86_64
+Provides: rust-iml-stats = 0.5.0-1.el7 rust-iml-stats(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-warp-drive-0.5.0-1.el7.x86_64
+Provides: rust-iml-warp-drive = 0.5.0-1.el7 rust-iml-warp-drive(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-mailbox-0.5.0-1.el7.x86_64
+Provides: rust-iml-mailbox = 0.5.0-1.el7 rust-iml-mailbox(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-network-0.5.0-1.el7.x86_64
+Provides: rust-iml-network = 0.5.0-1.el7 rust-iml-network(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-ntp-0.5.0-1.el7.x86_64
+Provides: rust-iml-ntp = 0.5.0-1.el7 rust-iml-ntp(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-postoffice-0.5.0-1.el7.x86_64
+Provides: rust-iml-postoffice = 0.5.0-1.el7 rust-iml-postoffice(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-report-0.5.0-1.el7.x86_64
+Provides: rust-iml-report = 0.5.0-1.el7 rust-iml-report(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-sfa-0.5.0-1.el7.x86_64
+Provides: rust-iml-sfa = 0.5.0-1.el7 rust-iml-sfa(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-snapshot-0.5.0-1.el7.x86_64
+Provides: rust-iml-snapshot = 0.5.0-1.el7 rust-iml-snapshot(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.10()(64bit) libcrypto.so.10(OPENSSL_1.0.2)(64bit) libcrypto.so.10(libcrypto.so.10)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libssl.so.10()(64bit) libssl.so.10(libssl.so.10)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-device-0.5.0-1.el7.x86_64
+Provides: rust-iml-device = 0.5.0-1.el7 rust-iml-device(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-journal-0.5.0-1.el7.x86_64
+Provides: rust-iml-journal = 0.5.0-1.el7 rust-iml-journal(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-corosync-0.5.0-1.el7.x86_64
+Provides: rust-iml-corosync = 0.5.0-1.el7 rust-iml-corosync(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Processing files: rust-iml-timer-0.5.0-1.el7.x86_64
+Provides: rust-iml-timer = 0.5.0-1.el7 rust-iml-timer(x86-64) = 0.5.0-1.el7
+Requires(interp): /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) rtld(GNU_HASH)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-debuginfo-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-cli-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-cli-bash-completion-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-cli-zsh-completion-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-config-cli-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-agent-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-agent-comms-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-api-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-action-runner-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-ostpool-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-task-runner-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-stats-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-warp-drive-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-mailbox-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-network-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-ntp-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-postoffice-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-report-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-sfa-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-snapshot-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-device-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-journal-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-corosync-0.5.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-timer-0.5.0-1.el7.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.rGvQux
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ cd rust-iml-0.5.0
++ /usr/bin/rm -rf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-0.5.0-1.el7.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /var/tmp/rpm-tmp.npIJFh
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ rm -rf rust-iml-0.5.0
++ exit 0

@@ -1,0 +1,908 @@
+make -f .copr/Makefile iml-gui-srpm outdir=.
+make[1]: Entering directory `/root/integrated-manager-for-lustre'
+mkdir -p /tmp/tmp.4POHF3W25F/_topdir/{SOURCES,SPECS}
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
+[yarn]
+name=Yarn Repository
+baseurl=https://dl.yarnpkg.com/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.yarnpkg.com/rpm/pubkey.gpg
+curl --silent --location https://rpm.nodesource.com/setup_12.x | bash -
+
+## Installing the NodeSource Node.js 12.x repo...
+
+
+## Inspecting system...
+
++ rpm -q --whatprovides redhat-release || rpm -q --whatprovides centos-release || rpm -q --whatprovides cloudlinux-release || rpm -q --whatprovides sl-release || rpm -q --whatprovides fedora-release
++ uname -m
+
+## Confirming "el7-x86_64" is supported...
+
++ curl -sLf -o /dev/null 'https://rpm.nodesource.com/pub_12.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm'
+
+## Downloading release setup RPM...
+
++ mktemp
++ curl -sL -o '/tmp/tmp.hP3ggpyiot' 'https://rpm.nodesource.com/pub_12.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm'
+
+## Installing release setup RPM...
+
++ rpm -i --nosignature --force '/tmp/tmp.hP3ggpyiot'
+
+## Cleaning up...
+
++ rm -f '/tmp/tmp.hP3ggpyiot'
+
+## Checking for existing installations...
+
++ rpm -qa 'node|npm' | grep -v nodesource
+
+## Your system appears to already have Node.js installed from an alternative source.
+Run `sudo yum remove -y nodejs npm` to remove these first.
+
+
+## Run `sudo yum install -y nodejs` to install Node.js 12.x and npm.
+## You may run dnf if yum is not available:
+     sudo dnf install -y nodejs
+## You may also need development tools to build native addons:
+     sudo yum install gcc-c++ make
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+     sudo yum install yarn
+
+yum install -y yarn
+Loaded plugins: copr, fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.fcix.net
+ * epel: repo.ialab.dsu.edu
+ * extras: mirror.vtti.vt.edu
+ * updates: linux-mirrors.fnal.gov
+Package yarn-1.22.18-1.noarch already installed and latest version
+Nothing to do
+cd iml-gui; \
+yarn install; \
+yarn build:release
+yarn install v1.22.18
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 83.25s.
+yarn run v1.22.18
+$ yarn generate:css_classes && webpack --config configs/webpack.config --mode=production
+$ webpack --config configs/webpack.css_classes.config --mode=development
+ℹ Compiling Webpack
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+✔ Webpack: Compiled successfully in 37.01s
+Hash: f165563818c87afa8ff6
+Version: webpack 4.44.1
+Time: 37021ms
+Built at: 05/12/2022 1:28:30 AM
+         Asset      Size  Chunks             Chunk Names
+css_classes.js  2.98 MiB    main  [emitted]  main
+Entrypoint main = css_classes.js
+[./css/styles.css] 574 bytes {main} [built]
+[./entries/index.css_classes.ts] 186 bytes {main} [built]
+[./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js?!./css/styles.css] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./css/styles.css 2.78 MiB {main} [built]
+[./static/fonts/inter/Inter-Bold.woff] 78 bytes {main} [built]
+[./static/fonts/inter/Inter-Bold.woff2] 79 bytes {main} [built]
+[./static/fonts/inter/Inter-Regular.woff] 81 bytes {main} [built]
+[./static/fonts/inter/Inter-Regular.woff2] 82 bytes {main} [built]
+[./static/fonts/inter/Inter-SemiBold.woff] 82 bytes {main} [built]
+[./static/fonts/inter/Inter-SemiBold.woff2] 83 bytes {main} [built]
+    + 3 hidden modules
+🧐  Checking for wasm-pack...
+
+✅  wasm-pack is installed. 
+
+ℹ️  Compiling your crate in release mode...
+
+[INFO]: Checking for the Wasm target...
+[INFO]: Compiling to Wasm...
+   Compiling proc-macro2 v1.0.24
+   Compiling unicode-xid v0.2.1
+   Compiling syn v1.0.46
+   Compiling serde_derive v1.0.117
+   Compiling serde v1.0.117
+   Compiling log v0.4.11
+   Compiling wasm-bindgen-shared v0.2.68
+   Compiling ryu v1.0.5
+   Compiling cfg-if v0.1.10
+   Compiling bumpalo v3.4.0
+   Compiling itoa v0.4.6
+   Compiling autocfg v1.0.1
+   Compiling serde_json v1.0.59
+   Compiling lazy_static v1.4.0
+   Compiling version_check v0.9.2
+   Compiling wasm-bindgen v0.2.68
+   Compiling libc v0.2.79
+   Compiling matches v0.1.8
+   Compiling memchr v2.3.3
+   Compiling typenum v1.12.0
+   Compiling futures-sink v0.3.7
+   Compiling futures-core v0.3.7
+   Compiling proc-macro-nested v0.1.6
+   Compiling tinyvec v0.3.4
+   Compiling proc-macro-hack v0.5.18
+   Compiling once_cell v1.4.1
+   Compiling futures-io v0.3.7
+   Compiling regex-syntax v0.6.20
+   Compiling rand_core v0.5.1
+   Compiling slab v0.4.2
+   Compiling pin-utils v0.1.0
+   Compiling bitflags v1.2.1
+   Compiling version_check v0.1.5
+   Compiling pulldown-cmark v0.6.1
+   Compiling unicode-width v0.1.8
+   Compiling percent-encoding v1.0.1
+   Compiling percent-encoding v2.1.0
+   Compiling humantime v2.0.1
+   Compiling hashbrown v0.9.1
+   Compiling enclose v1.1.8
+   Compiling natord v1.0.9
+   Compiling number-formatter v0.2.0 (/root/integrated-manager-for-lustre/number-formatter)
+   Compiling unicode-bidi v0.3.4
+   Compiling unicase v2.6.0
+   Compiling im v15.0.0
+   Compiling seed v0.6.0
+   Compiling num-traits v0.2.12
+   Compiling num-integer v0.1.43
+   Compiling indexmap v1.6.0
+   Compiling futures-channel v0.3.7
+   Compiling futures-task v0.3.7
+   Compiling unicode-normalization v0.1.13
+   Compiling rand_xoshiro v0.4.0
+   Compiling getopts v0.2.21
+   Compiling dbg v1.0.4
+   Compiling form_urlencoded v1.0.0
+   Compiling regex v1.4.1
+   Compiling idna v0.1.5
+   Compiling quote v1.0.7
+   Compiling iml-api-utils v0.4.0 (/root/integrated-manager-for-lustre/iml-api-utils)
+   Compiling time v0.1.44
+   Compiling url v1.7.2
+   Compiling bitmaps v2.1.0
+   Compiling cookie v0.12.0
+   Compiling sized-chunks v0.6.2
+   Compiling wasm-bindgen-backend v0.2.68
+   Compiling pin-project-internal v1.0.1
+   Compiling futures-macro v0.3.7
+   Compiling serde_repr v0.1.6
+   Compiling wasm-bindgen-macro-support v0.2.68
+   Compiling wasm-bindgen-macro v0.2.68
+   Compiling pin-project v1.0.1
+   Compiling futures-util v0.3.7
+   Compiling futures-executor v0.3.7
+   Compiling futures v0.3.7
+   Compiling ipnetwork v0.17.0
+   Compiling serde_urlencoded v0.7.0
+   Compiling iml-influx v0.2.0 (/root/integrated-manager-for-lustre/iml-influx)
+   Compiling js-sys v0.3.45
+   Compiling console_error_panic_hook v0.1.6
+   Compiling chrono v0.4.19
+   Compiling web-sys v0.3.45
+   Compiling wasm-bindgen-futures v0.4.18
+   Compiling iml-wire-types v0.4.0 (/root/integrated-manager-for-lustre/iml-wire-types)
+   Compiling chrono-humanize v0.0.11
+warning: derive helper attribute is used before it is introduced
+    --> /root/integrated-manager-for-lustre/iml-wire-types/src/lib.rs:2034:3
+     |
+2034 | #[serde(rename_all = "lowercase")]
+     |   ^^^^^
+2035 | #[derive(PartialEq, Eq, Clone, Debug, serde::Serialize, serde::Deserialize, Ord, PartialOrd)]
+     |                                       ---------------- the attribute is introduced here
+     |
+     = note: `#[warn(legacy_derive_helpers)]` on by default
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #79202 <https://github.com/rust-lang/rust/issues/79202>
+
+warning: field is never read: `state_modified_at`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:119:5
+    |
+119 |     state_modified_at: String,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `state`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:120:5
+    |
+120 |     state: String,
+    |     ^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `immutable_state`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:121:5
+    |
+121 |     immutable_state: bool,
+    |     ^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `name`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:122:5
+    |
+122 |     name: String,
+    |     ^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `mgs_id`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:123:5
+    |
+123 |     mgs_id: i32,
+    |     ^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `mdt_next_index`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:124:5
+    |
+124 |     mdt_next_index: i32,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `ost_next_index`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:125:5
+    |
+125 |     ost_next_index: i32,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `content_type_id`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:127:5
+    |
+127 |     content_type_id: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `FsRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:116:30
+    |
+116 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `index`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:456:5
+    |
+456 |     index: i32,
+    |     ^^^^^^^^^^
+    |
+note: `ManagedOstRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:453:30
+    |
+453 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `filesystem_id`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:457:5
+    |
+457 |     filesystem_id: i32,
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+note: `ManagedOstRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:453:30
+    |
+453 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `index`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:484:5
+    |
+484 |     index: i32,
+    |     ^^^^^^^^^^
+    |
+note: `ManagedMdtRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:481:30
+    |
+481 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `filesystem_id`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:485:5
+    |
+485 |     filesystem_id: i32,
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+note: `ManagedMdtRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:481:30
+    |
+481 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `alert_item_type_id`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:559:5
+    |
+559 |     alert_item_type_id: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `alert_item_id`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:560:5
+    |
+560 |     alert_item_id: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `alert_type`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:561:5
+    |
+561 |     alert_type: String,
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `begin`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:562:5
+    |
+562 |     begin: String,
+    |     ^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `end`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:563:5
+    |
+563 |     end: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `dismissed`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:565:5
+    |
+565 |     dismissed: bool,
+    |     ^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `severity`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:566:5
+    |
+566 |     severity: i32,
+    |     ^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `record_type`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:567:5
+    |
+567 |     record_type: String,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `variant`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:568:5
+    |
+568 |     variant: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `lustre_pid`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:569:5
+    |
+569 |     lustre_pid: Option<i32>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `message`
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:570:5
+    |
+570 |     message: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: `AlertStateRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-wire-types/src/db.rs:556:30
+    |
+556 | #[derive(serde::Deserialize, Debug)]
+    |                              ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+   Compiling iml-graphql-queries v0.2.0 (/root/integrated-manager-for-lustre/iml-graphql-queries)
+warning: field is never read: `line`
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:31:5
+   |
+31 |     line: u32,
+   |     ^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+note: `Location` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:29:10
+   |
+29 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `column`
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:32:5
+   |
+32 |     column: u32,
+   |     ^^^^^^^^^^^
+   |
+note: `Location` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:29:10
+   |
+29 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `locations`
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:38:5
+   |
+38 |     locations: Vec<Location>,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+note: `Error` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:35:10
+   |
+35 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `path`
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:39:5
+   |
+39 |     path: Vec<String>,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+note: `Error` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/lib.rs:35:10
+   |
+35 | #[derive(Debug, Clone, serde::Deserialize)]
+   |          ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `task_id`
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/task.rs:54:9
+   |
+54 |         task_id: i32,
+   |         ^^^^^^^^^^^^
+   |
+note: `TaskCommand` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/task.rs:52:14
+   |
+52 |     #[derive(Debug, Clone, serde::Deserialize)]
+   |              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `command`
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/task.rs:55:9
+   |
+55 |         command: Command,
+   |         ^^^^^^^^^^^^^^^^
+   |
+note: `TaskCommand` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/task.rs:52:14
+   |
+52 |     #[derive(Debug, Clone, serde::Deserialize)]
+   |              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `remove`
+   --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/task.rs:104:9
+    |
+104 |         remove: Command,
+    |         ^^^^^^^^^^^^^^^
+    |
+note: `Remove` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   --> /root/integrated-manager-for-lustre/iml-graphql-queries/src/task.rs:102:14
+    |
+102 |     #[derive(Debug, Clone, serde::Deserialize)]
+    |              ^^^^^  ^^^^^
+    = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `iml-graphql-queries` (lib) generated 7 warnings
+   Compiling gloo-timers v0.2.1
+warning: `iml-wire-types` (lib) generated 24 warnings
+   Compiling iml-gui v0.3.0 (/root/integrated-manager-for-lustre/iml-gui/crate)
+warning: field is never read: `name`
+  --> src/components/chart/fs_usage.rs:42:5
+   |
+42 |     name: String,
+   |     ^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+note: `InfluxSeries` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+  --> src/components/chart/fs_usage.rs:39:30
+   |
+39 | #[derive(serde::Deserialize, Clone, Debug)]
+   |                              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Clone` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `columns`
+  --> src/components/chart/fs_usage.rs:44:5
+   |
+44 |     columns: Vec<String>,
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+note: `InfluxSeries` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+  --> src/components/chart/fs_usage.rs:39:30
+   |
+39 | #[derive(serde::Deserialize, Clone, Debug)]
+   |                              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Clone` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `statement_id`
+  --> src/components/chart/fs_usage.rs:51:5
+   |
+51 |     statement_id: u16,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+note: `InfluxResult` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+  --> src/components/chart/fs_usage.rs:48:30
+   |
+48 | #[derive(serde::Deserialize, Clone, Debug)]
+   |                              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Clone` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `name`
+  --> src/components/stratagem/inode_table.rs:48:5
+   |
+48 |     name: String,
+   |     ^^^^^^^^^^^^
+   |
+note: `InfluxSeries` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+  --> src/components/stratagem/inode_table.rs:45:30
+   |
+45 | #[derive(serde::Deserialize, Clone, Debug)]
+   |                              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Clone` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `columns`
+  --> src/components/stratagem/inode_table.rs:50:5
+   |
+50 |     columns: Vec<String>,
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+note: `InfluxSeries` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+  --> src/components/stratagem/inode_table.rs:45:30
+   |
+45 | #[derive(serde::Deserialize, Clone, Debug)]
+   |                              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Clone` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `statement_id`
+  --> src/components/stratagem/inode_table.rs:57:5
+   |
+57 |     statement_id: u16,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+note: `InfluxResult` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+  --> src/components/stratagem/inode_table.rs:54:30
+   |
+54 | #[derive(serde::Deserialize, Clone, Debug)]
+   |                              ^^^^^  ^^^^^
+   = note: this warning originates in the derive macro `Clone` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `take`
+  --> src/page/snapshot/list_interval.rs:37:5
+   |
+37 |     take: take::Model,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+note: `Model` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  --> src/page/snapshot/list_interval.rs:32:19
+   |
+32 | #[derive(Default, Debug)]
+   |                   ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: field is never read: `take`
+  --> src/page/snapshot/list_retention.rs:20:5
+   |
+20 |     take: take::Model,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+note: `Model` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  --> src/page/snapshot/list_retention.rs:16:19
+   |
+16 | #[derive(Default, Debug)]
+   |                   ^^^^^
+   = note: this warning originates in the derive macro `Debug` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `iml-gui` (lib) generated 8 warnings
+    Finished release [optimized] target(s) in 7m 44s
+[WARN]: :-) origin crate has no README
+[INFO]: Installing wasm-bindgen...
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: :-) Done in 8m 36s
+[INFO]: :-) Your wasm pkg is ready to publish at /root/integrated-manager-for-lustre/iml-gui/crate/pkg.
+✅  Your crate has been correctly compiled
+
+ℹ Compiling Webpack
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+✔ Webpack: Compiled successfully in 58.99s
+Hash: ea23bcffade72fd5485e
+Version: webpack 4.44.1
+Time: 579022ms
+Built at: 05/12/2022 1:38:13 AM
+                                  Asset       Size  Chunks                                Chunk Names
+              1.907bd43e20e484b48721.js   32.5 KiB       1  [emitted] [immutable]         
+             android-chrome-192x192.png   4.27 KiB          [emitted]                     
+             android-chrome-256x256.png   5.42 KiB          [emitted]                     
+            app.3825d06db67d8b74ef77.js   18.2 KiB       0  [emitted] [immutable]         app
+           app.804f3bd8f3f85f2d1d66.css   43.6 KiB       0  [emitted] [immutable]         app
+                   apple-touch-icon.png   4.09 KiB          [emitted]                     
+                      browserconfig.xml  246 bytes          [emitted]                     
+       eaa45655549f7b1fd64f.module.wasm   3.01 MiB       1  [emitted] [immutable]  [big]  
+                      favicon-16x16.png  797 bytes          [emitted]                     
+                      favicon-32x32.png   1.39 KiB          [emitted]                     
+                            favicon.ico   14.7 KiB          [emitted]                     
+                             index.html   1.29 KiB          [emitted]                     
+                     mstile-150x150.png   4.03 KiB          [emitted]                     
+                  safari-pinned-tab.svg   2.36 KiB          [emitted]                     
+                       site.webmanifest  392 bytes          [emitted]                     
+                     sprites/brands.svg    448 KiB          [emitted]              [big]  
+                    sprites/regular.svg    107 KiB          [emitted]                     
+                      sprites/solid.svg    637 KiB          [emitted]              [big]  
+     static/fonts/inter/Inter-Bold.woff    131 KiB          [emitted]                     
+    static/fonts/inter/Inter-Bold.woff2   97.1 KiB          [emitted]                     
+  static/fonts/inter/Inter-Regular.woff    122 KiB          [emitted]                     
+ static/fonts/inter/Inter-Regular.woff2   90.4 KiB          [emitted]                     
+ static/fonts/inter/Inter-SemiBold.woff    131 KiB          [emitted]                     
+static/fonts/inter/Inter-SemiBold.woff2   96.9 KiB          [emitted]                     
+              static/notification.sw.js  117 bytes          [emitted]                     
+            static/text-polyfill.min.js   2.14 KiB          [emitted]                     
+Entrypoint app = app.804f3bd8f3f85f2d1d66.css app.3825d06db67d8b74ef77.js
+[0] ./entries/index.ts 2.93 KiB {0} [built]
+[1] ./css/styles.css 39 bytes {0} [built]
+[2] ./crate/pkg/index.js 97 bytes {1} [built]
+[3] ./crate/pkg/index_bg.js 42.1 KiB {1} [built]
+[4] ./crate/pkg/index_bg.wasm 3.01 MiB {1} [built]
+[5] (webpack)/buildin/harmony-module.js 573 bytes {1} [built]
+[6] (webpack)/buildin/global.js 472 bytes {1} [built]
+    + 1 hidden module
+Child HtmlWebpackCompiler:
+     1 asset
+    Entrypoint HtmlWebpackPlugin_0 = __child-HtmlWebpackPlugin_0
+     [5] (webpack)/buildin/global.js 472 bytes {0} [built]
+     [8] ./node_modules/html-webpack-plugin/lib/loader.js!./entries/index.hbs 1.87 KiB {0} [built]
+    [24] ./entries/templates/favicons.hbs 817 bytes {0} [built]
+    [25] ./entries/templates/head_scripts.hbs 1010 bytes {0} [built]
+    [26] ./entries/templates/loading_page.hbs 822 bytes {0} [built]
+        + 22 hidden modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--7-2!css/styles.css:
+    Entrypoint mini-css-extract-plugin = *
+    [2] ./static/fonts/inter/Inter-Bold.woff2 79 bytes {0} [built]
+    [3] ./static/fonts/inter/Inter-Bold.woff 78 bytes {0} [built]
+    [4] ./static/fonts/inter/Inter-Regular.woff2 82 bytes {0} [built]
+    [5] ./static/fonts/inter/Inter-Regular.woff 81 bytes {0} [built]
+    [6] ./static/fonts/inter/Inter-SemiBold.woff2 83 bytes {0} [built]
+    [7] ./static/fonts/inter/Inter-SemiBold.woff 82 bytes {0} [built]
+    [8] ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--7-2!./css/styles.css 48 KiB {0} [built]
+        + 2 hidden modules
+Done in 622.68s.
+tar cvf /tmp/tmp.4POHF3W25F/_topdir/SOURCES/iml-gui.tar -C ./iml-gui dist
+dist/
+dist/app.804f3bd8f3f85f2d1d66.css
+dist/app.3825d06db67d8b74ef77.js
+dist/1.907bd43e20e484b48721.js
+dist/eaa45655549f7b1fd64f.module.wasm
+dist/static/
+dist/static/notification.sw.js
+dist/static/fonts/
+dist/static/fonts/inter/
+dist/static/fonts/inter/Inter-Bold.woff
+dist/static/fonts/inter/Inter-Bold.woff2
+dist/static/fonts/inter/Inter-Regular.woff
+dist/static/fonts/inter/Inter-Regular.woff2
+dist/static/fonts/inter/Inter-SemiBold.woff
+dist/static/fonts/inter/Inter-SemiBold.woff2
+dist/static/text-polyfill.min.js
+dist/android-chrome-192x192.png
+dist/android-chrome-256x256.png
+dist/apple-touch-icon.png
+dist/browserconfig.xml
+dist/favicon-16x16.png
+dist/favicon-32x32.png
+dist/favicon.ico
+dist/mstile-150x150.png
+dist/safari-pinned-tab.svg
+dist/site.webmanifest
+dist/sprites/
+dist/sprites/brands.svg
+dist/sprites/regular.svg
+dist/sprites/solid.svg
+dist/index.html
+cp iml-gui/rust-iml-gui.spec /tmp/tmp.4POHF3W25F/_topdir/SPECS/
+rpmbuild -bs -D "_topdir /tmp/tmp.4POHF3W25F/_topdir" /tmp/tmp.4POHF3W25F/_topdir/SPECS/rust-iml-gui.spec
+Wrote: /tmp/tmp.4POHF3W25F/_topdir/SRPMS/rust-iml-gui-0.4.0-1.el7.src.rpm
+cp -rf /tmp/tmp.4POHF3W25F/_topdir ./
+cp -f /tmp/tmp.4POHF3W25F/_topdir/SRPMS/*.rpm .
+make[1]: Leaving directory `/root/integrated-manager-for-lustre'
+rpmbuild --rebuild -D "_topdir /root/integrated-manager-for-lustre/_topdir" _topdir/SRPMS/rust-iml-gui-*.src.rpm
+Installing _topdir/SRPMS/rust-iml-gui-0.4.0-1.el7.src.rpm
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.UEDpjA
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ rm -rf rust-iml-gui-0.4.0
++ /usr/bin/mkdir -p rust-iml-gui-0.4.0
++ cd rust-iml-gui-0.4.0
++ /usr/bin/tar -xvvf /root/integrated-manager-for-lustre/_topdir/SOURCES/iml-gui.tar
+drwxr-xr-x root/root         0 2022-05-12 01:38 dist/
+-rw-r--r-- root/root     44674 2022-05-12 01:38 dist/app.804f3bd8f3f85f2d1d66.css
+-rw-r--r-- root/root     18604 2022-05-12 01:38 dist/app.3825d06db67d8b74ef77.js
+-rw-r--r-- root/root     33274 2022-05-12 01:38 dist/1.907bd43e20e484b48721.js
+-rw-r--r-- root/root   3155977 2022-05-12 01:38 dist/eaa45655549f7b1fd64f.module.wasm
+drwxr-xr-x root/root         0 2022-05-12 01:38 dist/static/
+-rw-r--r-- root/root       117 2022-05-12 01:38 dist/static/notification.sw.js
+drwxr-xr-x root/root         0 2022-05-12 01:38 dist/static/fonts/
+drwxr-xr-x root/root         0 2022-05-12 01:38 dist/static/fonts/inter/
+-rw-r--r-- root/root    134424 2022-05-12 01:38 dist/static/fonts/inter/Inter-Bold.woff
+-rw-r--r-- root/root     99404 2022-05-12 01:38 dist/static/fonts/inter/Inter-Bold.woff2
+-rw-r--r-- root/root    125420 2022-05-12 01:38 dist/static/fonts/inter/Inter-Regular.woff
+-rw-r--r-- root/root     92560 2022-05-12 01:38 dist/static/fonts/inter/Inter-Regular.woff2
+-rw-r--r-- root/root    133948 2022-05-12 01:38 dist/static/fonts/inter/Inter-SemiBold.woff
+-rw-r--r-- root/root     99268 2022-05-12 01:38 dist/static/fonts/inter/Inter-SemiBold.woff2
+-rw-r--r-- root/root      2192 2022-05-12 01:38 dist/static/text-polyfill.min.js
+-rw-r--r-- root/root      4375 2022-05-12 01:38 dist/android-chrome-192x192.png
+-rw-r--r-- root/root      5555 2022-05-12 01:38 dist/android-chrome-256x256.png
+-rw-r--r-- root/root      4184 2022-05-12 01:38 dist/apple-touch-icon.png
+-rw-r--r-- root/root       246 2022-05-12 01:38 dist/browserconfig.xml
+-rw-r--r-- root/root       797 2022-05-12 01:38 dist/favicon-16x16.png
+-rw-r--r-- root/root      1427 2022-05-12 01:38 dist/favicon-32x32.png
+-rw-r--r-- root/root     15086 2022-05-12 01:38 dist/favicon.ico
+-rw-r--r-- root/root      4123 2022-05-12 01:38 dist/mstile-150x150.png
+-rw-r--r-- root/root      2415 2022-05-12 01:38 dist/safari-pinned-tab.svg
+-rw-r--r-- root/root       392 2022-05-12 01:38 dist/site.webmanifest
+drwxr-xr-x root/root         0 2022-05-12 01:38 dist/sprites/
+-rw-r--r-- root/root    459006 2022-05-12 01:38 dist/sprites/brands.svg
+-rw-r--r-- root/root    109518 2022-05-12 01:38 dist/sprites/regular.svg
+-rw-r--r-- root/root    652146 2022-05-12 01:38 dist/sprites/solid.svg
+-rw-r--r-- root/root      1323 2022-05-12 01:38 dist/index.html
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.n3RzS7
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ cd rust-iml-gui-0.4.0
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.YgxNsF
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ '[' /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64 '!=' / ']'
++ rm -rf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64
+++ dirname /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT
++ mkdir /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64
++ cd rust-iml-gui-0.4.0
++ rm -rf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64
++ mkdir -p /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64/usr/share/iml-manager/rust-iml-gui
++ mv dist/1.907bd43e20e484b48721.js dist/android-chrome-192x192.png dist/android-chrome-256x256.png dist/app.3825d06db67d8b74ef77.js dist/app.804f3bd8f3f85f2d1d66.css dist/apple-touch-icon.png dist/browserconfig.xml dist/eaa45655549f7b1fd64f.module.wasm dist/favicon-16x16.png dist/favicon-32x32.png dist/favicon.ico dist/index.html dist/mstile-150x150.png dist/safari-pinned-tab.svg dist/site.webmanifest dist/sprites dist/static /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64/usr/share/iml-manager/rust-iml-gui
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /root/integrated-manager-for-lustre/_topdir/BUILD/rust-iml-gui-0.4.0
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-compress
++ /usr/lib/rpm/redhat/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: rust-iml-gui-0.4.0-1.el7.x86_64
+Provides: rust-iml-gui = 0.4.0-1.el7 rust-iml-gui(x86-64) = 0.4.0-1.el7
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: rust-iml-gui-debuginfo-0.4.0-1.el7.x86_64
+Provides: rust-iml-gui-debuginfo = 0.4.0-1.el7 rust-iml-gui-debuginfo(x86-64) = 0.4.0-1.el7
+Requires(rpmlib): rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1 rpmlib(CompressedFileNames) <= 3.0.4-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-gui-0.4.0-1.el7.x86_64.rpm
+Wrote: /root/integrated-manager-for-lustre/_topdir/RPMS/x86_64/rust-iml-gui-debuginfo-0.4.0-1.el7.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.petuUx
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ cd rust-iml-gui-0.4.0
++ rm -rf /root/integrated-manager-for-lustre/_topdir/BUILDROOT/rust-iml-gui-0.4.0-1.el7.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /var/tmp/rpm-tmp.4nDkAc
++ umask 022
++ cd /root/integrated-manager-for-lustre/_topdir/BUILD
++ rm -rf rust-iml-gui-0.4.0
++ exit 0

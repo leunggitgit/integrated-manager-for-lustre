@@ -46,6 +46,7 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 yum -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 systemctl start docker
+systemctl enable docker
 
 # Unclear if we really need this...
 yum install -y python python-pip python-devel python2-pbr postgresql96 openssl gcc-c++
@@ -56,5 +57,11 @@ yum install -y python python-pip python-devel python2-pbr postgresql96 openssl g
 curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)"  -o /usr/local/bin/docker-compose
 mv /usr/local/bin/docker-compose /usr/bin/docker-compose
 chmod +x /usr/bin/docker-compose
+
+# If time is not correct, it might affect "make docker-rpms"
+yum install ntp
+service ntp restart
+systemctl restart ntpd
+systemctl enable ntpd
 
 

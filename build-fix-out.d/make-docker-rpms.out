@@ -1,0 +1,529 @@
+make -C docker save
+make[1]: Entering directory `/root/integrated-manager-for-lustre/docker'
+docker system prune -f --all --volumes
+Total reclaimed space: 0B
+rm -rf iml-images.tar.gz
+DOCKER_CLI_EXPERIMENTAL=enabled docker buildx bake -f compose-deps.hcl
+#1 [rust-service-base internal] load build definition from rust-service-base.dockerfile
+#1 transferring dockerfile: 201B 0.0s done
+#1 DONE 0.0s
+
+#2 [rust-base internal] load build definition from rust-base.dockerfile
+#2 transferring dockerfile: 504B done
+#2 DONE 0.0s
+
+#3 [iml-gui internal] load build definition from iml-gui.dockerfile
+#3 transferring dockerfile: 870B done
+#3 DONE 0.0s
+
+#4 [systemd-base internal] load build definition from systemd-base.dockerfile
+#4 transferring dockerfile: 731B done
+#4 DONE 0.0s
+
+#5 [python-service-base internal] load build definition from python-service-base.dockerfile
+#5 transferring dockerfile: 1.13kB done
+#5 DONE 0.0s
+
+#6 [rust-service-base internal] load .dockerignore
+#6 transferring context: 456B 0.0s done
+#6 DONE 0.0s
+
+#7 [rust-base internal] load .dockerignore
+#7 transferring context: 456B done
+#7 DONE 0.0s
+
+#8 [iml-gui internal] load .dockerignore
+#8 transferring context: 456B done
+#8 DONE 0.0s
+
+#9 [systemd-base internal] load .dockerignore
+#9 transferring context: 456B done
+#9 DONE 0.0s
+
+#10 [python-service-base internal] load .dockerignore
+#10 transferring context: 456B done
+#10 DONE 0.0s
+
+#11 [iml-gui internal] load metadata for docker.io/library/rust:1.46
+#11 DONE 1.6s
+
+#12 [iml-gui internal] load metadata for docker.io/library/ubuntu:latest
+#12 DONE 1.6s
+
+#13 [python-service-base internal] load metadata for docker.io/library/centos:7
+#13 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 resolve docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e 0.0s done
+#14 sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e 988B / 988B done
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 3.15MB / 50.40MB 3.4s
+#14 sha256:d5b161fdc53260a2b40807d93833d099034bbd6ffae033c72ecb0ad90f871707 1.59kB / 1.59kB done
+#14 sha256:4050c19325e5bfdf14536338f668e0a477e0800f515e53261ebedc2bcca52271 6.46kB / 6.46kB done
+#14 sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb 6.29MB / 7.81MB 3.4s
+#14 sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb 7.34MB / 7.81MB 3.7s
+#14 sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb 7.81MB / 7.81MB 3.8s
+#14 sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb 7.81MB / 7.81MB 3.9s done
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 0B / 10.00MB 4.1s
+#14 ...
+
+#15 [rust-base internal] load build context
+#15 transferring context: 146.19MB 4.3s done
+#15 DONE 4.4s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 1.05MB / 10.00MB 4.5s
+#14 ...
+
+#16 [python-service-base internal] load build context
+#16 transferring context: 146.19MB 4.6s done
+#16 DONE 4.6s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 ...
+
+#17 [iml-gui internal] load build context
+#17 transferring context: 146.19MB 4.7s done
+#17 DONE 4.8s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 3.15MB / 10.00MB 4.9s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 6.29MB / 50.40MB 5.2s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 4.19MB / 10.00MB 5.2s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 5.24MB / 10.00MB 5.5s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 6.29MB / 10.00MB 5.7s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 7.34MB / 10.00MB 6.0s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 8.39MB / 10.00MB 6.2s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 9.44MB / 10.00MB 6.5s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 10.00MB / 10.00MB 6.6s
+#14 sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 10.00MB / 10.00MB 6.6s done
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 0B / 51.83MB 6.7s
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 3.15MB / 51.83MB 7.8s
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 6.29MB / 51.83MB 8.8s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 9.44MB / 50.40MB 8.9s
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 9.44MB / 51.83MB 10.0s
+#14 ...
+
+#18 [iml-gui stage-1 1/2] FROM docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d
+#18 resolve docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d 0.0s done
+#18 sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d 1.42kB / 1.42kB done
+#18 sha256:aa6c2c047467afc828e77e306041b7fa4a65734fe3449a54aa9c280822b0d87d 529B / 529B done
+#18 sha256:d2e4e1f511320dfb2d0baff2468fcf0526998b73fe10c8890b4684bb7ef8290f 1.46kB / 1.46kB done
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 9.44MB / 30.42MB 10.1s
+#18 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 resolve docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407 0.0s done
+#19 sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407 1.20kB / 1.20kB done
+#19 sha256:dead07b4d8ed7e29e98de0f4504d87e8880d4347859d839686a31da35a3b532f 529B / 529B done
+#19 sha256:eeb6ee3f44bd0b5103bb561b4c16bcb82328cfe5809ab675bb17ab3a16c517c9 2.75kB / 2.75kB done
+#19 ...
+
+#18 [iml-gui stage-1 1/2] FROM docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 11.53MB / 30.42MB 12.0s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 13.63MB / 30.42MB 14.5s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 15.73MB / 30.42MB 17.1s
+#18 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 20.97MB / 50.40MB 17.8s
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 27.26MB / 51.83MB 17.8s
+#14 ...
+
+#18 [iml-gui stage-1 1/2] FROM docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 17.83MB / 30.42MB 19.1s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 19.92MB / 30.42MB 20.9s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 22.02MB / 30.42MB 22.3s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 24.12MB / 30.42MB 23.6s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 26.21MB / 30.42MB 24.8s
+#18 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 29.36MB / 50.40MB 25.6s
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 45.09MB / 51.83MB 25.6s
+#14 ...
+
+#18 [iml-gui stage-1 1/2] FROM docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 28.31MB / 30.42MB 26.1s
+#18 sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 30.42MB / 30.42MB 27.0s done
+#18 extracting sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 0.1s
+#18 extracting sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 4.5s done
+#18 DONE 32.1s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 35.65MB / 50.40MB 32.0s
+#14 sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 51.83MB / 51.83MB 28.5s done
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 8.39MB / 192.25MB 32.0s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 4.19MB / 117.81MB 32.0s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 38.80MB / 50.40MB 34.4s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 10.49MB / 117.81MB 35.0s
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 17.83MB / 192.25MB 37.2s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 41.94MB / 50.40MB 37.4s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 16.78MB / 117.81MB 39.3s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 45.09MB / 50.40MB 40.3s
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 27.26MB / 192.25MB 42.2s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 23.07MB / 117.81MB 42.8s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 48.23MB / 50.40MB 43.6s
+#14 sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 50.40MB / 50.40MB 46.0s done
+#14 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 0B / 76.10MB 46.0s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 4.19MB / 76.10MB 49.2s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 8.39MB / 76.10MB 51.5s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 12.58MB / 76.10MB 54.0s
+#19 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 47.19MB / 192.25MB 56.4s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 47.19MB / 117.81MB 56.4s
+#14 extracting sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8 7.1s done
+#14 extracting sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb 1.0s done
+#14 extracting sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef 0.9s done
+#14 extracting sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 0.3s
+#14 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 16.78MB / 76.10MB 56.8s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 20.97MB / 76.10MB 59.4s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 25.17MB / 76.10MB 62.2s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 29.36MB / 76.10MB 64.9s
+#19 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 60.82MB / 192.25MB 66.7s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 69.21MB / 117.81MB 66.7s
+#14 extracting sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7 7.8s done
+#14 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 33.55MB / 76.10MB 67.9s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 37.75MB / 76.10MB 71.0s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 41.94MB / 76.10MB 73.8s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 46.14MB / 76.10MB 76.6s
+#19 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 77.59MB / 192.25MB 76.9s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 89.13MB / 117.81MB 76.9s
+#14 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 50.33MB / 76.10MB 79.3s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 54.53MB / 76.10MB 81.6s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 58.72MB / 76.10MB 83.5s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 62.91MB / 76.10MB 85.8s
+#19 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 95.42MB / 192.25MB 87.2s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 105.91MB / 117.81MB 87.2s
+#14 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 67.11MB / 76.10MB 88.2s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 71.30MB / 76.10MB 90.2s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 75.50MB / 76.10MB 92.3s
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 76.10MB / 76.10MB 92.8s done
+#19 sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 76.10MB / 76.10MB 92.8s done
+#19 extracting sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc
+#19 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 122.68MB / 192.25MB 97.5s
+#14 sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 117.81MB / 117.81MB 94.1s done
+#14 ...
+
+#19 [systemd-base 1/2] FROM docker.io/library/centos:7@sha256:c73f515d06b0fa07bb18d8202035e739a494ce760aa73129f60f4bf2bd22b407
+#19 extracting sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 5.1s
+#19 extracting sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 10.2s
+#19 extracting sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 11.7s done
+#19 extracting sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 11.7s done
+#19 DONE 105.3s
+
+#20 [python-service-base builder 2/6] WORKDIR /build
+#20 DONE 1.4s
+
+#21 [python-service-base stage-1 2/6] WORKDIR /usr/share/chroma-manager/
+#21 DONE 1.4s
+
+#22 [rust-base 3/5] RUN yum update -y   && yum install -y gcc openssl openssl-devel epel-release   && yum clean all   && yum clean all   && cd /root   && curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
+#22 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 174.06MB / 192.25MB 107.8s
+#14 ...
+
+#23 [systemd-base 2/2] RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i ==   systemd-tmpfiles-setup.service ] || rm -f $i; done);   rm -f /lib/systemd/system/multi-user.target.wants/*;  rm -f /etc/systemd/system/*.wants/*;  rm -f /lib/systemd/system/local-fs.target.wants/*;   rm -f /lib/systemd/system/sockets.target.wants/*udev*;   rm -f /lib/systemd/system/sockets.target.wants/*initctl*;   rm -f /lib/systemd/system/basic.target.wants/*;   rm -f /lib/systemd/system/anaconda.target.wants/*;
+#23 DONE 3.9s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 ...
+
+#24 [python-service-base builder 3/6] COPY . .
+#24 DONE 2.5s
+
+#25 [python-service-base stage-1 3/6] COPY . .
+#25 DONE 2.6s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 ...
+
+#26 [systemd-base] exporting to image
+#26 exporting layers 0.3s done
+#26 writing image sha256:cf666b1893badf335d1f36b12eab3d9fb86ab0adfcbb1b07e55405d693341847 done
+#26 naming to docker.io/imlteam/systemd-base:6.3.0 done
+#26 DONE 0.3s
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 184.55MB / 192.25MB 110.0s
+#14 sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 192.25MB / 192.25MB 111.8s done
+#14 extracting sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723
+#14 ...
+
+#27 [rust-service-base 2/2] RUN yum update -y   && yum install -y postgresql   && yum clean all
+#0 3.902 Loaded plugins: fastestmirror, ovl
+#0 4.533 Determining fastest mirrors
+#0 8.573  * base: repos.lax.layerhost.com
+#0 8.590  * extras: mirror.keystealth.org
+#0 8.590  * updates: mirrors.mit.edu
+#27 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 extracting sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 5.3s
+#14 ...
+
+#28 [python-service-base builder 4/6] RUN yum update -y
+#0 1.400 Loaded plugins: fastestmirror, ovl
+#0 1.844 Determining fastest mirrors
+#0 4.239  * base: repos.lax.layerhost.com
+#0 4.240  * extras: mirror.keystealth.org
+#0 4.241  * updates: mirrors.raystedman.org
+#28 ...
+
+#22 [rust-base 3/5] RUN yum update -y   && yum install -y gcc openssl openssl-devel epel-release   && yum clean all   && yum clean all   && cd /root   && curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
+#22 2.535 Loaded plugins: fastestmirror, ovl
+#22 3.134 Determining fastest mirrors
+#22 7.798  * base: repos.lax.layerhost.com
+#22 7.800  * extras: mirror.keystealth.org
+#22 7.815  * updates: mirrors.raystedman.org
+#22 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 extracting sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 10.5s
+#14 extracting sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 15.6s
+#14 ...
+
+#27 [rust-service-base 2/2] RUN yum update -y   && yum install -y postgresql   && yum clean all
+#27 26.67 Resolving Dependencies
+#27 26.67 --> Running transaction check
+#27 26.68 ---> Package bash.x86_64 0:4.2.46-34.el7 will be updated
+#27 26.74 ---> Package bash.x86_64 0:4.2.46-35.el7_9 will be an update
+#27 26.75 ---> Package bind-license.noarch 32:9.11.4-26.P2.el7 will be updated
+#27 26.75 ---> Package bind-license.noarch 32:9.11.4-26.P2.el7_9.9 will be an update
+#27 26.75 ---> Package binutils.x86_64 0:2.27-44.base.el7 will be updated
+#27 26.76 ---> Package binutils.x86_64 0:2.27-44.base.el7_9.1 will be an update
+#27 26.79 ---> Package ca-certificates.noarch 0:2020.2.41-70.0.el7_8 will be updated
+#27 26.79 ---> Package ca-certificates.noarch 0:2021.2.50-72.el7_9 will be an update
+#27 26.80 ---> Package centos-release.x86_64 0:7-9.2009.0.el7.centos will be updated
+#27 26.80 ---> Package centos-release.x86_64 0:7-9.2009.1.el7.centos will be an update
+#27 26.80 ---> Package coreutils.x86_64 0:8.22-24.el7 will be updated
+#27 26.81 ---> Package coreutils.x86_64 0:8.22-24.el7_9.2 will be an update
+#27 26.84 ---> Package curl.x86_64 0:7.29.0-59.el7 will be updated
+#27 26.85 ---> Package curl.x86_64 0:7.29.0-59.el7_9.1 will be an update
+#27 26.87 ---> Package cyrus-sasl-lib.x86_64 0:2.1.26-23.el7 will be updated
+#27 26.87 ---> Package cyrus-sasl-lib.x86_64 0:2.1.26-24.el7_9 will be an update
+#27 26.89 ---> Package device-mapper.x86_64 7:1.02.170-6.el7 will be updated
+#27 26.90 ---> Package device-mapper.x86_64 7:1.02.170-6.el7_9.5 will be an update
+#27 26.91 ---> Package device-mapper-libs.x86_64 7:1.02.170-6.el7 will be updated
+#27 26.92 ---> Package device-mapper-libs.x86_64 7:1.02.170-6.el7_9.5 will be an update
+#27 26.93 ---> Package expat.x86_64 0:2.1.0-12.el7 will be updated
+#27 26.94 ---> Package expat.x86_64 0:2.1.0-14.el7_9 will be an update
+#27 26.94 ---> Package glib2.x86_64 0:2.56.1-7.el7 will be updated
+#27 26.95 ---> Package glib2.x86_64 0:2.56.1-9.el7_9 will be an update
+#27 26.97 ---> Package glibc.x86_64 0:2.17-317.el7 will be updated
+#27 26.98 ---> Package glibc.x86_64 0:2.17-325.el7_9 will be an update
+#27 26.98 ---> Package glibc-common.x86_64 0:2.17-317.el7 will be updated
+#27 26.99 ---> Package glibc-common.x86_64 0:2.17-325.el7_9 will be an update
+#27 26.99 ---> Package kpartx.x86_64 0:0.4.9-133.el7 will be updated
+#27 27.00 ---> Package kpartx.x86_64 0:0.4.9-135.el7_9 will be an update
+#27 27.00 ---> Package krb5-libs.x86_64 0:1.15.1-50.el7 will be updated
+#27 27.00 ---> Package krb5-libs.x86_64 0:1.15.1-51.el7_9 will be an update
+#27 27.02 ---> Package libblkid.x86_64 0:2.23.2-65.el7 will be updated
+#27 27.02 ---> Package libblkid.x86_64 0:2.23.2-65.el7_9.1 will be an update
+#27 27.03 ---> Package libcurl.x86_64 0:7.29.0-59.el7 will be updated
+#27 27.03 ---> Package libcurl.x86_64 0:7.29.0-59.el7_9.1 will be an update
+#27 27.06 ---> Package libmount.x86_64 0:2.23.2-65.el7 will be updated
+#27 27.07 ---> Package libmount.x86_64 0:2.23.2-65.el7_9.1 will be an update
+#27 27.07 ---> Package libsmartcols.x86_64 0:2.23.2-65.el7 will be updated
+#27 27.08 ---> Package libsmartcols.x86_64 0:2.23.2-65.el7_9.1 will be an update
+#27 27.08 ---> Package libuuid.x86_64 0:2.23.2-65.el7 will be updated
+#27 27.08 ---> Package libuuid.x86_64 0:2.23.2-65.el7_9.1 will be an update
+#27 27.09 ---> Package libxml2.x86_64 0:2.9.1-6.el7.5 will be updated
+#27 27.09 ---> Package libxml2.x86_64 0:2.9.1-6.el7_9.6 will be an update
+#27 27.10 ---> Package libxml2-python.x86_64 0:2.9.1-6.el7.5 will be updated
+#27 27.11 ---> Package libxml2-python.x86_64 0:2.9.1-6.el7_9.6 will be an update
+#27 27.14 ---> Package nspr.x86_64 0:4.25.0-2.el7_9 will be updated
+#27 27.15 ---> Package nspr.x86_64 0:4.32.0-1.el7_9 will be an update
+#27 27.15 ---> Package nss.x86_64 0:3.53.1-3.el7_9 will be updated
+#27 27.16 ---> Package nss.x86_64 0:3.67.0-4.el7_9 will be an update
+#27 27.17 ---> Package nss-softokn.x86_64 0:3.53.1-6.el7_9 will be updated
+#27 27.18 ---> Package nss-softokn.x86_64 0:3.67.0-3.el7_9 will be an update
+#27 27.19 ---> Package nss-softokn-freebl.x86_64 0:3.53.1-6.el7_9 will be updated
+#27 27.19 ---> Package nss-softokn-freebl.x86_64 0:3.67.0-3.el7_9 will be an update
+#27 27.19 ---> Package nss-sysinit.x86_64 0:3.53.1-3.el7_9 will be updated
+#27 27.19 ---> Package nss-sysinit.x86_64 0:3.67.0-4.el7_9 will be an update
+#27 27.19 ---> Package nss-tools.x86_64 0:3.53.1-3.el7_9 will be updated
+#27 27.20 ---> Package nss-tools.x86_64 0:3.67.0-4.el7_9 will be an update
+#27 27.26 ---> Package nss-util.x86_64 0:3.53.1-1.el7_9 will be updated
+#27 27.26 ---> Package nss-util.x86_64 0:3.67.0-1.el7_9 will be an update
+#27 27.26 ---> Package openldap.x86_64 0:2.4.44-22.el7 will be updated
+#27 27.26 ---> Package openldap.x86_64 0:2.4.44-25.el7_9 will be an update
+#27 27.28 ---> Package openssl-libs.x86_64 1:1.0.2k-19.el7 will be updated
+#27 27.29 ---> Package openssl-libs.x86_64 1:1.0.2k-25.el7_9 will be an update
+#27 27.29 ---> Package python.x86_64 0:2.7.5-89.el7 will be updated
+#27 27.29 ---> Package python.x86_64 0:2.7.5-90.el7 will be an update
+#27 27.30 ---> Package python-libs.x86_64 0:2.7.5-89.el7 will be updated
+#27 27.30 ---> Package python-libs.x86_64 0:2.7.5-90.el7 will be an update
+#27 27.32 ---> Package rpm.x86_64 0:4.11.3-45.el7 will be updated
+#27 27.33 ---> Package rpm.x86_64 0:4.11.3-48.el7_9 will be an update
+#27 27.35 ---> Package rpm-build-libs.x86_64 0:4.11.3-45.el7 will be updated
+#27 27.35 ---> Package rpm-build-libs.x86_64 0:4.11.3-48.el7_9 will be an update
+#27 27.36 ---> Package rpm-libs.x86_64 0:4.11.3-45.el7 will be updated
+#27 27.36 ---> Package rpm-libs.x86_64 0:4.11.3-48.el7_9 will be an update
+#27 27.37 ---> Package rpm-python.x86_64 0:4.11.3-45.el7 will be updated
+#27 27.37 ---> Package rpm-python.x86_64 0:4.11.3-48.el7_9 will be an update
+#27 27.38 ---> Package systemd.x86_64 0:219-78.el7 will be updated
+#27 27.42 ---> Package systemd.x86_64 0:219-78.el7_9.5 will be an update
+#27 27.45 ---> Package systemd-libs.x86_64 0:219-78.el7 will be updated
+#27 27.46 ---> Package systemd-libs.x86_64 0:219-78.el7_9.5 will be an update
+#27 27.47 ---> Package tzdata.noarch 0:2020d-2.el7 will be updated
+#27 27.47 ---> Package tzdata.noarch 0:2022a-1.el7 will be an update
+#27 27.47 ---> Package util-linux.x86_64 0:2.23.2-65.el7 will be updated
+#27 27.47 ---> Package util-linux.x86_64 0:2.23.2-65.el7_9.1 will be an update
+#27 27.50 ---> Package vim-minimal.x86_64 2:7.4.629-7.el7 will be updated
+#27 27.50 ---> Package vim-minimal.x86_64 2:7.4.629-8.el7_9 will be an update
+#27 27.50 ---> Package zlib.x86_64 0:1.2.7-18.el7 will be updated
+#27 27.50 ---> Package zlib.x86_64 0:1.2.7-19.el7_9 will be an update
+#27 27.72 --> Finished Dependency Resolution
+#27 27.76 
+#27 27.76 Dependencies Resolved
+#27 27.79 
+#27 27.79 ================================================================================
+#27 27.79  Package               Arch      Version                       Repository  Size
+#27 27.79 ================================================================================
+#27 27.79 Updating:
+#27 27.79  bash                  x86_64    4.2.46-35.el7_9               updates    1.0 M
+#27 27.79  bind-license          noarch    32:9.11.4-26.P2.el7_9.9       updates     91 k
+#27 27.79  binutils              x86_64    2.27-44.base.el7_9.1          updates    5.9 M
+#27 27.79  ca-certificates       noarch    2021.2.50-72.el7_9            updates    379 k
+#27 27.79  centos-release        x86_64    7-9.2009.1.el7.centos         updates     27 k
+#27 27.79  coreutils             x86_64    8.22-24.el7_9.2               updates    3.3 M
+#27 27.79  curl                  x86_64    7.29.0-59.el7_9.1             updates    271 k
+#27 27.79  cyrus-sasl-lib        x86_64    2.1.26-24.el7_9               updates    156 k
+#27 27.79  device-mapper         x86_64    7:1.02.170-6.el7_9.5          updates    297 k
+#27 27.79  device-mapper-libs    x86_64    7:1.02.170-6.el7_9.5          updates    325 k
+#27 27.79  expat                 x86_64    2.1.0-14.el7_9                updates     83 k
+#27 27.79  glib2                 x86_64    2.56.1-9.el7_9                updates    2.5 M
+#27 27.79  glibc                 x86_64    2.17-325.el7_9                updates    3.6 M
+#27 27.79  glibc-common          x86_64    2.17-325.el7_9                updates     12 M
+#27 27.79  kpartx                x86_64    0.4.9-135.el7_9               updates     81 k
+#27 27.79  krb5-libs             x86_64    1.15.1-51.el7_9               updates    809 k
+#27 27.79  libblkid              x86_64    2.23.2-65.el7_9.1             updates    183 k
+#27 27.79  libcurl               x86_64    7.29.0-59.el7_9.1             updates    223 k
+#27 27.79  libmount              x86_64    2.23.2-65.el7_9.1             updates    185 k
+#27 27.79  libsmartcols          x86_64    2.23.2-65.el7_9.1             updates    143 k
+#27 27.79  libuuid               x86_64    2.23.2-65.el7_9.1             updates     84 k
+#27 27.79  libxml2               x86_64    2.9.1-6.el7_9.6               updates    668 k
+#27 27.79  libxml2-python        x86_64    2.9.1-6.el7_9.6               updates    247 k
+#27 27.79  nspr                  x86_64    4.32.0-1.el7_9                updates    127 k
+#27 27.79  nss                   x86_64    3.67.0-4.el7_9                updates    882 k
+#27 27.79  nss-softokn           x86_64    3.67.0-3.el7_9                updates    358 k
+#27 27.79  nss-softokn-freebl    x86_64    3.67.0-3.el7_9                updates    337 k
+#27 27.79  nss-sysinit           x86_64    3.67.0-4.el7_9                updates     66 k
+#27 27.79  nss-tools             x86_64    3.67.0-4.el7_9                updates    549 k
+#27 27.79  nss-util              x86_64    3.67.0-1.el7_9                updates     79 k
+#27 27.79  openldap              x86_64    2.4.44-25.el7_9               updates    356 k
+#27 27.79  openssl-libs          x86_64    1:1.0.2k-25.el7_9             updates    1.2 M
+#27 27.79  python                x86_64    2.7.5-90.el7                  updates     96 k
+#27 27.79  python-libs           x86_64    2.7.5-90.el7                  updates    5.6 M
+#27 27.79  rpm                   x86_64    4.11.3-48.el7_9               updates    1.2 M
+#27 27.79  rpm-build-libs        x86_64    4.11.3-48.el7_9               updates    108 k
+#27 27.79  rpm-libs              x86_64    4.11.3-48.el7_9               updates    279 k
+#27 27.79  rpm-python            x86_64    4.11.3-48.el7_9               updates     84 k
+#27 27.79  systemd               x86_64    219-78.el7_9.5                updates    5.1 M
+#27 27.79  systemd-libs          x86_64    219-78.el7_9.5                updates    419 k
+#27 27.79  tzdata                noarch    2022a-1.el7                   updates    501 k
+#27 27.79  util-linux            x86_64    2.23.2-65.el7_9.1             updates    2.0 M
+#27 27.79  vim-minimal           x86_64    2:7.4.629-8.el7_9             updates    443 k
+#27 27.79  zlib                  x86_64    1.2.7-19.el7_9                updates     90 k
+#27 27.79 
+#27 27.79 Transaction Summary
+#27 27.79 ================================================================================
+#27 27.79 Upgrade  44 Packages
+#27 27.79 
+#27 27.79 Total download size: 52 M
+#27 27.79 Downloading packages:
+#27 27.81 Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+#27 28.49 Public key for centos-release-7-9.2009.1.el7.centos.x86_64.rpm is not installed
+#27 28.49 warning: /var/cache/yum/x86_64/7/updates/packages/centos-release-7-9.2009.1.el7.centos.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+#27 ...
+
+#14 [iml-gui builder 1/4] FROM docker.io/library/rust:1.46@sha256:90d7ddc83ab195dbe2d2f56e94c0a3f47952fcc1990d6d9b14d6d4213333a43e
+#14 extracting sha256:65b3db15f518f11e53c95664d0675a5d78a5329d18d5316a406c2a45907a0723 25.0s done
+#14 extracting sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 4.5s
+#14 extracting sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 9.5s
+#14 extracting sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 14.6s
+#14 extracting sha256:96fb3a57a96adb4c57b28e444d56a82c8dfd04e97514a5f70cf677b59d94b466 15.0s done
+#14 DONE 153.8s
+
+#29 [iml-gui builder 2/4] WORKDIR /build
+#29 DONE 0.6s
+
+#30 [iml-gui builder 3/4] COPY . .
+#30 DONE 1.4s
+
+#31 [iml-gui builder 4/4] RUN rustup target add wasm32-unknown-unknown &&     curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh &&     apt-get update -y &&     apt  install -y curl dirmngr apt-transport-https lsb-release ca-certificates &&     curl -sL https://deb.nodesource.com/setup_12.x | bash - &&     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &&     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &&     apt-get update -y &&     apt-get install -y yarn nodejs &&     cd /build/iml-gui &&     yarn install &&     yarn build:release;
+#31 0.872 info: downloading component 'rust-std' for 'wasm32-unknown-unknown'
+#31 3.424 info: installing component 'rust-std' for 'wasm32-unknown-unknown'
+#31 3.427 info: Defaulting to 500.0 MiB unpack ram
+#31 5.370 info: downloading wasm-pack
+#31 7.292 info: successfully installed wasm-pack to `/usr/local/cargo/bin/wasm-pack`
+#31 7.478 Get:1 http://deb.debian.org/debian buster InRelease [122 kB]
+#31 7.497 Get:2 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+#31 7.549 Get:3 http://deb.debian.org/debian buster-updates InRelease [51.9 kB]
+#31 8.146 Get:4 http://deb.debian.org/debian buster/main amd64 Packages [7911 kB]
+#31 12.17 Reading package lists...
+#31 14.19 E: Release file for http://security.debian.org/debian-security/dists/buster/updates/InRelease is not valid yet (invalid for another 20h 10min 13s). Updates for this repository will not be applied.
+#31 14.19 E: Release file for http://deb.debian.org/debian/dists/buster-updates/InRelease is not valid yet (invalid for another 18h 40min 42s). Updates for this repository will not be applied.
+#31 ERROR: executor failed running [/bin/sh -c rustup target add wasm32-unknown-unknown &&     curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh &&     apt-get update -y &&     apt  install -y curl dirmngr apt-transport-https lsb-release ca-certificates &&     curl -sL https://deb.nodesource.com/setup_12.x | bash - &&     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &&     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &&     apt-get update -y &&     apt-get install -y yarn nodejs &&     cd /build/iml-gui &&     yarn install &&     yarn build:release;]: exit code: 100
+
+#13 [systemd-base internal] load metadata for docker.io/library/centos:7
+#13 ...
+
+#28 [python-service-base builder 4/6] RUN yum update -y
+#28 CANCELED
+
+#22 [rust-base 3/5] RUN yum update -y   && yum install -y gcc openssl openssl-devel epel-release   && yum clean all   && yum clean all   && cd /root   && curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
+#22 CANCELED
+
+#27 [rust-service-base 2/2] RUN yum update -y   && yum install -y postgresql   && yum clean all
+#27 CANCELED
+
+#13 [systemd-base internal] load metadata for docker.io/library/centos:7
+------
+ > [iml-gui builder 4/4] RUN rustup target add wasm32-unknown-unknown &&     curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh &&     apt-get update -y &&     apt  install -y curl dirmngr apt-transport-https lsb-release ca-certificates &&     curl -sL https://deb.nodesource.com/setup_12.x | bash - &&     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &&     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &&     apt-get update -y &&     apt-get install -y yarn nodejs &&     cd /build/iml-gui &&     yarn install &&     yarn build:release;:
+#31 3.427 info: Defaulting to 500.0 MiB unpack ram
+#31 5.370 info: downloading wasm-pack
+#31 7.292 info: successfully installed wasm-pack to `/usr/local/cargo/bin/wasm-pack`
+#31 7.478 Get:1 http://deb.debian.org/debian buster InRelease [122 kB]
+#31 7.497 Get:2 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+#31 7.549 Get:3 http://deb.debian.org/debian buster-updates InRelease [51.9 kB]
+#31 8.146 Get:4 http://deb.debian.org/debian buster/main amd64 Packages [7911 kB]
+
+#31 14.19 E: Release file for http://security.debian.org/debian-security/dists/buster/updates/InRelease is not valid yet (invalid for another 20h 10min 13s). Updates for this repository will not be applied.
+#31 14.19 E: Release file for http://deb.debian.org/debian/dists/buster-updates/InRelease is not valid yet (invalid for another 18h 40min 42s). Updates for this repository will not be applied.
+------
+error: failed to solve: executor failed running [/bin/sh -c rustup target add wasm32-unknown-unknown &&     curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh &&     apt-get update -y &&     apt  install -y curl dirmngr apt-transport-https lsb-release ca-certificates &&     curl -sL https://deb.nodesource.com/setup_12.x | bash - &&     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &&     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &&     apt-get update -y &&     apt-get install -y yarn nodejs &&     cd /build/iml-gui &&     yarn install &&     yarn build:release;]: exit code: 100
+make[1]: *** [build] Error 1
+make[1]: Leaving directory `/root/integrated-manager-for-lustre/docker'
+make: *** [docker-rpms] Error 2
