@@ -59,9 +59,7 @@ mv /usr/local/bin/docker-compose /usr/bin/docker-compose
 chmod +x /usr/bin/docker-compose
 
 # If time is not correct, it might affect "make docker-rpms"
-yum install ntp
-service ntp restart
+yum install -y ntp
 systemctl restart ntpd
 systemctl enable ntpd
-
 
